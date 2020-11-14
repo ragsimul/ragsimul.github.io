@@ -1,0 +1,437 @@
+body{
+  font-family: 'Arial', 'Dotum';
+  font-size: 12px;
+  height: 100%;
+  overflow: hidden;
+}
+
+::selection {
+  background-color: rgba(124, 156, 225, 0.4) /* WebKit/Blink Browsers */
+}
+#baseLV{
+  width: 30px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+
+}
+#table {
+  width: 440px;
+  clear: both;
+  float: left;
+}
+.rowTable {
+  display: table-row;
+}
+
+
+/* Character Data */
+
+
+#charlist{
+  position: fixed;
+  margin: auto;
+  z-index : 1;
+  left: 120px;;
+  top: 100px;
+  display: none;
+  width:831px;
+  height: 330px;;
+  padding-top: 20px;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  box-shadow:
+  0 0 10px  rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+  -o-box-shadow: 0 0 10px  rgba(0,0,0,0.6);
+}
+
+.first-row{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  left: 50%;
+}
+
+
+#nv, #sw, #ma, #me, #ac, #th, #ar, #ta, #ni, #gu {
+  position: fixed;
+  margin: auto;
+  z-index : 1;
+  left: 120px;
+  top: 220px;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 20px;
+}
+
+#ma{
+  left: 202px;
+}
+#me{
+  left: 285px;
+}
+#ac{
+  left: 370px;
+}
+#th{
+  left: 455px;
+}
+#ar{
+  left: 540px;
+}
+#ta {
+  left: 705px;
+}
+#ni, #gu{
+  left: 785px;
+}
+
+.classChar{
+  float: left;
+}
+
+#classChar{
+  width: 80px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.classList{
+  width: 80px;
+}
+
+#charlist img:hover, #classlist img:hover{
+  background: #e0e0e0;
+}
+
+.charTable{
+  display:table;
+  float:right;
+  width: 290px;
+}
+.tableTitle {
+  background: linear-gradient(0deg, rgba(179,193,221,1) 0%, rgba(153,174,217,1) 54%, rgba(197,222,243,1) 100%);
+  margin-bottom: -1px;
+  border: 1px solid #8294c8;
+  text-indent: 20px;
+  text-shadow: 1px 1px #eee;
+  border-radius: 5px 5px 0 0;
+  clear: both;
+
+}
+#charName {
+  background: transparent;
+  border: 0px solid #c0c0c0;
+}
+#charName:focus{
+  outline: none;
+}
+
+
+
+.charData {
+  border-style: solid;
+  border-width: 1px 1px 0px 1px;
+  border-color: #c0c0c0;
+  height: 100%;
+
+}
+
+.healingTable {
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
+  border-color: #c0c0c0;
+  height: 100%;
+  border-radius : 0 0 5px 5px;
+}
+
+
+.baseLV, #className, .jobLV {
+  display: table-cell;
+}
+
+.baseLV{
+  padding-left: 20px;
+}
+.jobLV{
+  padding-left: 10px;
+}
+
+.HP, .SP {
+  display: table-cell;
+  padding-left: 20px;
+  width: 50%;
+}
+
+#HP, #SP{
+  display: inline-block;
+
+}
+
+#className{
+  text-align: center;
+  padding: 0px 10px;
+}
+
+#baseLV, #jobLV{
+  width: 30px;
+  border: hidden;
+
+}
+#baseLV:focus, #jobLV:focus{
+  outline:none;
+}
+
+.HP, .SP {
+
+}
+
+
+/* quick slot */
+.skills {
+  border: 1px solid #c0c0c0;
+  border-radius : 3px;
+  text-align: center;
+  background:linear-gradient(0deg, #f7f7f7 12.5%, #fff 12.5%, #fff 37.5%, #f7f7f7 37.5%, #f7f7f7 62.5%, #fff 62.5%, #fff 87.5%, #f7f7f7 87.5%);
+  background-size: 1px 8px;
+}
+.quickslot {
+  display: table;
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 290px;
+  height: 34px;
+}
+
+.buffs {
+  display: inline-block;
+  border : 1px solid #c0c0c0;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 4px;
+}
+
+/* StatTable Data */
+
+/* Table Setting */
+.statTable {
+  display: table;
+  padding: 0px;
+  border: 1px solid #c0c0c0;
+  border-top: 0px solid #c0c0c0;
+  padding: 0 5px 5px 5px;
+  clear: both;
+}
+
+.statBody {
+  display: table-row-group;
+}
+
+.specialStats {
+  height: 20px;
+  width: 100%;
+  border: 1px solid #c0c0c0;
+
+}
+
+
+/* Main Stat Window */
+
+.mainstats{
+  width: 25%;
+  display: table-cell;
+}
+.statName, .substatName{
+  display: table-cell;
+  font-family: 'Arial';
+  color: #283c65;
+  font-size: 12px;
+  font-weight: 900;
+  padding-right: 5px;
+}
+
+.statName{
+  float: left;
+  width: 25px;
+  margin-top: 5px;
+}
+
+.stats{
+  float: left;
+  display: table-cell;
+  margin-top: 5px;
+}
+
+#STR, #AGI, #VIT, #INT, #DEX, #LUK{
+  width: 25px;
+  border: 2px solid #c0c0c0;
+  background-color: #f2f2f2;
+  border-right: 0px solid #c0c0c0;
+  max-height: 15px;
+}
+#STR:focus, #AGI:focus, #VIT:focus, #INT:focus, #DEX:focus, #LUK:focus{
+outline: none;
+}
+
+
+.statBonus{
+  width: 30px;
+  margin-top: 5px;
+  float: left;
+  border: 2px solid #c0c0c0;
+  background-color: #f2f2f2;
+  border-left: 0px solid #c0c0c0;
+}
+
+#STRBonus:before, #AGIBonus:before, #VITBonus:before, #INTBonus:before, #DEXBonus:before, #LUKBonus:before{
+  content: "+"
+}
+
+.statIncrement {
+  display: table-cell;
+  float: left;
+  width: 8px;
+  padding-left: 2px;
+  margin-left: -2px;
+  margin-top: 5px;
+  background-color: #f2f2f2;
+  border: 2px solid #c0c0c0;
+}
+
+
+.statsAdd {
+  display: table-cell;
+  font-family: 'Arial';
+  text-align: right;
+  float: left;
+  width: 15px;
+  margin-top: 5px;
+  margin-left: -2px;
+  border: 2px solid #c0c0c0;
+}
+
+/* SubStats Window */
+
+.substats {
+  display: table-cell;
+  border-bottom: 1px solid #c0c0c0;
+  width: 30%;
+
+}
+
+.substatsblank {
+  display: table-cell;
+  border-bottom: 0px solid #c0c0c0;
+  width: 30%;
+
+}
+.substatName{
+  float: left;
+}
+.substat {
+  display: table-cell;
+  text-align: right;
+  float: right;
+  padding-top: 2px;
+}
+
+
+
+
+#ATK, #ATKADD, #MATK, #MATKADD, #DEF, #DEFADD, #MDEF, #MDEFADD, #HIT, #FLEE, #FLEEADD, #CRIT, #ASPD,#CAST, #StatPoint{
+  display: inline;
+  padding-right: 5px;
+}
+#CAST:after{
+  content: "%"
+}
+
+#ATKADD:before, #MATKADD:before, #DEFADD:before, #MDEFADD:before, #FLEEADD:before{
+  content: " + "
+}
+
+#statBlank {
+  border: 1px solid #000000;
+  pointer-events: none;
+}
+
+
+#Guild {
+  text-align: right;
+  width: 120px;
+  border: 0px solid #000000;
+
+}
+
+#Guild:focus{
+  overflow: none;
+}
+
+
+/* special stat table*/
+
+#tstat{
+  display: none;
+}
+#tstatTitle{
+  border: 1px solid #c0c0c0;
+  border-top: 0px solid #c0c0c0;
+  margin-bottom: -1px;
+  text-indent: 10px;
+  text-shadow: 1px 1px #aaa;
+  background:linear-gradient(0deg, #f7f7f7 12.5%, #fff 12.5%, #fff 37.5%, #f7f7f7 37.5%, #f7f7f7 62.5%, #fff 62.5%, #fff 87.5%, #f7f7f7 87.5%);
+  background-size: 1px 10px;
+  padding: 3px;
+
+}
+#tstatTitle:hover{
+  font-weight: 600;
+  color: #3355D9;
+}
+
+.tstatTable {
+  display: table;
+  padding: 0px;
+  border: 1px solid #c0c0c0;
+  border-top: 0px solid #c0c0c0;
+  padding: 0 5px 5px 5px;
+  clear: both;
+  border-radius: 0 0 5px 5px;
+}
+
+#POW, #STA, #WIS, #SPL, #CON, #CRT {
+  width: 25px;
+  border: 2px solid #c0c0c0;
+  background-color: #f2f2f2;
+  border-right: 0px solid #c0c0c0;
+  max-height: 15px;
+}
+#POW:focus, #STA:focus, #WIS:focus, #SPL:focus, #CON:focus, #CRT:focus{
+  outline: none;
+}
+
+
+#POWBonus:before, #STABonus:before, #WISBonus:before, #SPLBonus:before, #CONBonus:before, #CRTBonus:before{
+  content: "+"
+}
+
+#PATK, #SMATK, #RES, #MRES, #HPLUS, #CRATE, #TStatPoint{
+  display: inline;
+  padding-right: 5px;
+}
+
+
+
+
+#classtree{
+  border: none;
+width: 620px;
+height: 1050px;
+margin: -8px 0;
+}
