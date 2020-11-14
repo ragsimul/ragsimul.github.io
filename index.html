@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>::Ragnarok Online Simulator::</title>
+  <meta charset="utf-8">
+  <script>
+      var resizeHandle = function()
+      {
+          var theFrame = $('.window-content-wrapper', parent.document.body);
+          theFrame.height($(document).height());
+          var theFrame = $('.window-content', parent.document.body);
+          theFrame.height($(document).height());
+      };
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/54289d8689.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <p>라그나로크 시뮬레이터</p>
+
+  <div id="table">
+    <div class="classChar">
+      <img src="src/char/M/000.gif" id="classChar" onclick="classClick()"></img>
+    </div>
+    <div class="charTable">
+      <div class="tableTitle"><input id="charName" type="text" value="캐릭터명" spellcheck="false"/></input></div>
+      <div class="charData">
+        <div class="rowTable">
+          <div class="baseLV">Lv. <input id="baseLV" type="text" value="1" maxlength="3"></input></div>/
+          <div id="className" onclick="classClick()">Novice</div>/
+          <div class="jobLV">JLV. <input id="jobLV" type="text" value="1" maxlength="2"></input></div>
+        </div>
+      </div>
+      <div class="healingTable">
+        <div class="rowTable">
+          <div class="HP">HP. <div id="HP">4766</div></div>
+          <div class="SP">l SP. <div id="SP">1449</div></div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="quickslot">
+      <div class="skills">
+        <img src="src/img/items/almighty.png" alt="Almighty" class="buffs">
+        <img src="src/img/items/concentration_potion.png" alt="Concentration Potion" class="buffs">
+        <img src="src/img/items/awakening_potion.png" alt="Awakening Potion" class="buffs">
+        <img src="src/img/items/berserk_potion.png" alt="Berserk Potion" class="buffs">
+        <img src="src/img/items/celermine_juice.png" alt="Celemine Juice" class="buffs">
+        <img src="src/img/items/blessing_of_tyr.png" alt="Blessing of Tyr" class="buffs">
+        <img src="src/img/items/red_booster.png" alt="Red Booster" class="buffs">
+        <img src="src/img/items/power_booster.png" alt="Power Booster" class="buffs">
+        <img src="src/img/items/armor_scroll.png" alt="Armor Scroll" class="buffs">
+      </div>
+      <div class="skills">
+        <img src="src/img/items/abrasive.png" alt="abrasive" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+
+      </div>
+      <div class="skills">
+        <img src="src/img/skill/a01.bmp" alt="blessing" class="buffs">
+        <img src="src/img/skill/a02.bmp" alt="increase_agility" class="buffs">
+        <img src="src/img/skill/a03.bmp" alt="angelus" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/p01.bmp" alt="gloria" class="buffs">
+        <img src="src/img/skill/p02.bmp" alt="impositio_manus" class="buffs">
+        <img src="src/img/skill/p04.bmp" alt="suffragium" class="buffs">
+        <img src="src/img/skill/p03.bmp" alt="assumptio" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+
+      </div>
+      <div class="skills">
+        <img src="src/img/skill/ab01.bmp" alt="Clementia" class="buffs">
+        <img src="src/img/skill/ab02.bmp" alt="Cantocandidus" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/ab03.bmp" alt="Lauda Ramus" class="buffs">
+        <img src="src/img/skill/ab04.bmp" alt="Lauda Agnus" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/ab05.bmp" alt="Epiclesis" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+      </div>
+      <div class="skills">
+        <img src="src/img/skill/c01.bmp" alt="bendictum" class="buffs">
+        <img src="src/img/skill/c02.bmp" alt="religio" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/c03.bmp" alt="Presens Acies" class="buffs">
+        <img src="src/img/skill/c04.bmp" alt="Argutus Vita" class="buffs">
+        <img src="src/img/skill/c05.bmp" alt="Argutus Telum" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+        <img src="src/img/skill/c06.bmp" alt="competentia" class="buffs">
+        <img src="src/img/skill/0.bmp" alt="none" class="buffs">
+      </div>
+    </div>
+
+
+    <div class="tableTitle">스테이터스</div>
+    <div class="statTable">
+      <div class="statBody">
+        <div class="rowTable">
+          <div class="mainstats">
+            <div class="statName">Str</div>
+            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="STR" contenteditable="true">1</div></div>
+            <div class="statBonus"><div id="STRBonus">0</div></div>
+            <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+            <div class="statsAdd"><div id="STRAdd">2</div></div>
+          </div>
+          <div class="substats">
+            <div class="substatName">Atk</div>
+            <div class="substat"><div id="ATK">1</div><div id="ATKADD">0</div></div>
+          </div>
+          <div class="substats">
+            <div class="substatName">Def</div>
+            <div class="substat"><div id="DEF">1</div><div id="DEFADD">0</div></div>
+          </div>
+        </div>
+        <div class="rowTable">
+          <div class="mainstats">
+            <div class="statName">Agi</div>
+            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="AGI" contenteditable="true">1</div></div>
+            <div class="statBonus"><div id="AGIBonus">0</div></div>
+            <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+            <div class="statsAdd"><div id="AGIAdd">2</div></div>
+          </div>
+          <div class="substats">
+            <div class="substatName">Matk</div>
+            <div class="substat"><div id="MATK">1</div><div id="MATKADD">0</div></div>
+          </div>
+          <div class="substats">
+            <div class="substatName">Mdef</div>
+            <div class="substat"><div id="MDEF">1</div><div id="MDEFADD">0</div></div>
+          </div>
+        </div>
+        <div class="rowTable">
+          <div class="mainstats">
+            <div class="statName">Vit</div>
+            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="VIT" contenteditable="true">1</div></div>
+            <div class="statBonus"><div id="VITBonus">0</div></div>
+            <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+            <div class="statsAdd"><div id="VITAdd">2</div></div>
+          </div>
+          <div class="substats">
+            <div class="substatName">Hit</div>
+            <div class="substat"><div id="HIT">177</div></div>
+          </div>
+          <div class="substats">
+            <div class="substatName">Flee</div>
+            <div class="substat"><div id="FLEE">102</div><div id="FLEEADD">0</div></div>
+          </div>
+        </div>
+        <div class="rowTable">
+          <div class="mainstats">
+            <div class="statName">Int</div>
+            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="INT" contenteditable="true">1</div></div>
+            <div class="statBonus"><div id="INTBonus">0</div></div>
+            <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+            <div class="statsAdd"><div id="INTAdd">2</div></div>
+          </div>
+          <div class="substats">
+            <div class="substatName">Critical</div>
+            <div class="substat"><div id="CRIT">1</div></div>
+          </div>
+          <div class="substats">
+            <div class="substatName">Aspd</div>
+            <div class="substat"><div id="ASPD">156</div></div>
+          </div>
+        </div>
+        <div class="rowTable">
+          <div class="mainstats">
+            <div class="statName">Dex</div>
+            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="DEX" contenteditable="true">1</div></div>
+            <div class="statBonus"><div id="DEXBonus">0</div></div>
+            <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+            <div class="statsAdd"><div id="DEXAdd">2</div></div>
+          </div>
+          <div class="substats">
+            <div class="substatName">Casting</div>
+            <div class="substat"><div id="CAST">0</div></div>
+          </div>
+          <div class="substatsblank">
+          </div>
+        </div>
+        <div class="rowTable">
+          <div class="mainstats">
+            <div class="statName">Luk</div>
+            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="LUK" contenteditable="true">1</div></div>
+            <div class="statBonus"><div id="LUKBonus">0</div></div>
+            <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+            <div class="statsAdd"><div id="LUKAdd">2</div></div>
+          </div>
+          <div class="substats">
+            <div class="substatName">Status Point</div>
+          </div>
+          <div class="substats">
+            <div class="substatName"></div>
+            <div class="substat"><div id="StatPoint">48</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- special stats -->
+    <div id="tstatTitle" onclick="displayTstat()"><i id = "tstatTog"class="fas fa-angle-double-down" style="color:#3355D9;"></i>특성 스테이터스</div>
+    <div id = "tstat">
+      <div class="tstatTable">
+        <div class="statBody">
+          <div class="rowTable">
+            <div class="mainstats">
+              <div class="statName">Pow</div>
+              <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="POW" contenteditable="true">0</div></div>
+              <div class="statBonus"><div id="POWBonus">0</div></div>
+              <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+              <div class="statsAdd"><div id="POWAdd">1</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName">P.Atk</div>
+              <div class="substat"><div id="PATK">0</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Res</div>
+              <div class="substat"><div id="RES">0</div></div>
+            </div>
+          </div>
+          <div class="rowTable">
+            <div class="mainstats">
+              <div class="statName">Sta</div>
+              <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="STA" contenteditable="true">0</div></div>
+              <div class="statBonus"><div id="STABonus">0</div></div>
+              <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+              <div class="statsAdd"><div id="STAAdd">1</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName">S.Matk</div>
+              <div class="substat"><div id="SMATK">0</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Mres</div>
+              <div class="substat"><div id="MRES">0</div></div>
+            </div>
+          </div>
+          <div class="rowTable">
+            <div class="mainstats">
+              <div class="statName">Wis</div>
+              <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="WIS" contenteditable="true">0</div></div>
+              <div class="statBonus"><div id="WISBonus">0</div></div>
+              <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+              <div class="statsAdd"><div id="WISAdd">1</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName">H.Plus</div>
+              <div class="substat"><div id="HPLUS">0</div></div>
+            </div>
+            <div class="substatsblank">
+            </div>
+          </div>
+          <div class="rowTable">
+            <div class="mainstats">
+              <div class="statName">Spl</div>
+              <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="SPL" contenteditable="true">0</div></div>
+              <div class="statBonus"><div id="SPLBonus">0</div></div>
+              <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+              <div class="statsAdd"><div id="SPLAdd">1</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName">C.Rate</div>
+              <div class="substat"><div id="CRATE">0</div></div>
+            </div>
+            <div class="substatsblank">
+            </div>
+          </div>
+          <div class="rowTable">
+            <div class="mainstats">
+              <div class="statName">Con</div>
+              <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="CON" contenteditable="true">0</div></div>
+              <div class="statBonus"><div id="CONBonus">0</div></div>
+              <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+              <div class="statsAdd"><div id="CONAdd">1</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName">T.Status Point</div>
+            </div>
+            <div class="substats">
+              <div class="substat"><div id="TStatPoint">0</div></div>
+            </div>
+          </div>
+          <div class="rowTable">
+            <div class="mainstats">
+              <div class="statName">Crt</div>
+              <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="CRT" contenteditable="true">0</div></div>
+              <div class="statBonus"><div id="CRTBonus">0</div></div>
+              <div class="statIncrement"><img src="src/img/statInc.png"></img></div>
+              <div class="statsAdd"><div id="CRTAdd">1</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName"></div>
+            </div>
+            <div class="substats">
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .tstatTable -->
+    </div><!-- end of .tstat -->
+
+
+  </div> <!-- end of <table> -->
+
+    <object id="classtree" type="text/html" data="skills/000.html"></object>
+
+    <!-- character select -->
+
+    <div id="charlist">
+      <div id="first-row">
+        <img src="src/char/M/000.gif" class="classList" onclick="changeClass(c000)" onmouseover="nvOver()" onmouseout="nvOut()"></img>
+        <img src="src/char/M/110.gif" class="classList" onclick="changeClass(c110)" onmouseover="swOver()" onmouseout="swOut()"></img>
+        <img src="src/char/M/210.gif" class="classList" onclick="changeClass(c210)" onmouseover="maOver()" onmouseout="maOut()"></img>
+        <img src="src/char/M/310.gif" class="classList" onclick="changeClass(c310)" onmouseover="meOver()" onmouseout="meOut()"></img>
+        <img src="src/char/M/410.gif" class="classList" onclick="changeClass(c410)" onmouseover="acOver()" onmouseout="acOut()"></img>
+        <img src="src/char/M/510.gif" class="classList" onclick="changeClass(c510)" onmouseover="thOver()" onmouseout="thOut()"></img>
+        <img src="src/char/M/610.gif" class="classList" onclick="changeClass(c610)" onmouseover="arOver()" onmouseout="arOut()"></img>
+        <img src="src/char/M/710.gif" class="classList" onclick="changeClass(c610)" onmouseover="taOver()" onmouseout="taOut()"></img>
+        <img src="src/char/M/810.gif" class="classList" onclick="changeClass(c610)" onmouseover="niOver()" onmouseout="niOut()"></img>
+        <img src="src/char/M/910.gif" class="classList" onclick="changeClass(c610)" onmouseover="guOver()" onmouseout="guOut()"></img>
+      </div>
+    </div>
+
+    <div id ="classlist">
+      <div id="nv" onmouseover="nvOver()" onmouseout="nvOut()">
+        <div id="noviceClass">
+          <img src="src/char/M/000.gif" class="classList" onclick="changeClass(c000)"></img>
+          <img src="src/char/M/001.gif" class="classList" onclick="changeClass(c001)"></img>
+          <img src="src/char/M/002.gif" class="classList" onclick="changeClass(c002)"></img>
+          <img src="src/char/M/009.gif" class="classList" onclick="changeClass(c009)"></img>
+        </div>
+      </div>
+      <div id="sw" onmouseover="swOver()" onmouseout="swOut()">
+        <div id="swordClass">
+          <img src="src/char/M/110.gif" class="classList" onclick="changeClass(c110)"></img>
+          <img src="src/char/M/121.gif" class="classList" onclick="changeClass(c121)"></img>
+          <img src="src/char/M/123.gif" class="classList" onclick="changeClass(c123)"></img>
+          <img src="src/char/M/131.gif" class="classList" onclick="changeClass(c131)"></img>
+          <img src="src/char/M/141.gif" class="classList" onclick="changeClass(c141)"></img>
+        </div>
+        <div id="swordClassS">
+          <img src="src/char/M/null.gif" class="classList"></img>
+          <img src="src/char/M/122.gif" class="classList"onclick="changeClass(c122)"></img>
+          <img src="src/char/M/124.gif" class="classList"onclick="changeClass(c124)"></img>
+          <img src="src/char/M/132.gif" class="classList"onclick="changeClass(c132)"></img>
+          <img src="src/char/M/142.gif" class="classList"onclick="changeClass(c142)"></img>
+        </div>
+      </div>
+      <div id="ma" onmouseover="maOver()" onmouseout="maOut()">
+        <div id="magicianClass">
+          <img src="src/char/M/210.gif" class="classList" onclick="changeClass(c210)"></img>
+          <img src="src/char/M/221.gif" class="classList" onclick="changeClass(c221)"></img>
+          <img src="src/char/M/223.gif" class="classList" onclick="changeClass(c223)"></img>
+          <img src="src/char/M/231.gif" class="classList" onclick="changeClass(c231)"></img>
+          <img src="src/char/M/241.gif" class="classList" onclick="changeClass(c241)"></img>
+        </div>
+        <div id="magicianClassS">
+          <img src="src/char/M/null.gif" class="classList"></img>
+          <img src="src/char/M/222.gif" class="classList" onclick="changeClass(c222)"></img>
+          <img src="src/char/M/224.gif" class="classList" onclick="changeClass(c224)"></img>
+          <img src="src/char/M/232.gif" class="classList" onclick="changeClass(c232)"></img>
+          <img src="src/char/M/242.gif" class="classList" onclick="changeClass(c242)"></img>
+        </div>
+      </div>
+      <div id="me" onmouseover="meOver()" onmouseout="meOut()">
+        <div id="merchantClass">
+          <img src="src/char/M/310.gif" class="classList" onclick="changeClass(c310)"></img>
+          <img src="src/char/M/321.gif" class="classList" onclick="changeClass(c321)"></img>
+          <img src="src/char/M/323.gif" class="classList" onclick="changeClass(c323)"></img>
+          <img src="src/char/M/331.gif" class="classList" onclick="changeClass(c331)"></img>
+          <img src="src/char/M/341.gif" class="classList" onclick="changeClass(c341)"></img>
+        </div>
+        <div id="merchantClassS">
+          <img src="src/char/M/null.gif" class="classList"></img>
+          <img src="src/char/M/322.gif" class="classList" onclick="changeClass(c322)"></img>
+          <img src="src/char/M/324.gif" class="classList" onclick="changeClass(c324)"></img>
+          <img src="src/char/M/332.gif" class="classList" onclick="changeClass(c332)"></img>
+          <img src="src/char/M/342.gif" class="classList" onclick="changeClass(c342)"></img>
+        </div>
+      </div>
+      <div id="ac" onmouseover="acOver()" onmouseout="acOut()">
+        <div id="acolyteClass">
+          <img src="src/char/M/410.gif" class="classList" onclick="changeClass(c410)"></img>
+          <img src="src/char/M/421.gif" class="classList" onclick="changeClass(c421)"></img>
+          <img src="src/char/M/423.gif" class="classList" onclick="changeClass(c423)"></img>
+          <img src="src/char/M/431.gif" class="classList" onclick="changeClass(c431)"></img>
+          <img src="src/char/M/441.gif" class="classList" onclick="changeClass(c441)"></img>
+        </div>
+        <div id="acolyteClassS">
+          <img src="src/char/M/null.gif" class="classList"></img>
+          <img src="src/char/M/422.gif" class="classList" onclick="changeClass(c422)"></img>
+          <img src="src/char/M/424.gif" class="classList" onclick="changeClass(c424)"></img>
+          <img src="src/char/M/432.gif" class="classList" onclick="changeClass(c432)"></img>
+          <img src="src/char/M/442.gif" class="classList" onclick="changeClass(c442)"></img>
+        </div>
+      </div>
+      <div id="th" onmouseover="thOver()" onmouseout="thOut()">
+        <div id="theifClass">
+          <img src="src/char/M/510.gif" class="classList" onclick="changeClass(c510)"></img>
+          <img src="src/char/M/521.gif" class="classList" onclick="changeClass(c521)"></img>
+          <img src="src/char/M/523.gif" class="classList" onclick="changeClass(c523)"></img>
+          <img src="src/char/M/531.gif" class="classList" onclick="changeClass(c531)"></img>
+          <img src="src/char/M/541.gif" class="classList" onclick="changeClass(c541)"></img>
+        </div>
+        <div id="theifClassS">
+          <img src="src/char/M/null.gif" class="classList"></img>
+          <img src="src/char/M/522.gif" class="classList" onclick="changeClass(c522)"></img>
+          <img src="src/char/M/524.gif" class="classList" onclick="changeClass(c524)"></img>
+          <img src="src/char/M/532.gif" class="classList" onclick="changeClass(c532)"></img>
+          <img src="src/char/M/542.gif" class="classList" onclick="changeClass(c542)"></img>
+        </div>
+      </div>
+      <div id="ar" onmouseover="arOver()" onmouseout="arOut()">
+        <div id="archerClass">
+          <img src="src/char/M/610.gif" class="classList" onclick="changeClass(c610)"></img>
+          <img src="src/char/M/621.gif" class="classList" onclick="changeClass(c621)"></img>
+          <img src="src/char/M/623.gif" class="classList" onclick="changeClass(c623)"></img>
+          <img src="src/char/M/631.gif" class="classList" onclick="changeClass(c631)"></img>
+          <img src="src/char/M/641.gif" class="classList" onclick="changeClass(c641)"></img>
+        </div>
+        <div id="archerClassS">
+          <img src="src/char/M/null.gif" class="classList"></img>
+          <img src="src/char/M/622.gif" class="classList" onclick="changeClass(c622)"></img>
+          <img src="src/char/M/624.gif" class="classList" onclick="changeClass(c624)"></img>
+          <img src="src/char/M/632.gif" class="classList" onclick="changeClass(c632)"></img>
+          <img src="src/char/M/642.gif" class="classList" onclick="changeClass(c642)"></img>
+        </div>
+      </div>
+      <div id="ta" onmouseover="taOver()" onmouseout="taOut()">
+        <div id="taekwonClass">
+          <img src="src/char/M/710.gif" class="classList" onclick="changeClass(c710)"></img>
+          <img src="src/char/M/721.gif" class="classList" onclick="changeClass(c721)"></img>
+          <img src="src/char/M/731.gif" class="classList" onclick="changeClass(c731)"></img>
+        </div>
+        <div id="taekwonClassS">
+          <img src="src/char/M/null.gif" class="classList"></img>
+          <img src="src/char/M/722.gif" class="classList" onclick="changeClass(c722)"></img>
+          <img src="src/char/M/732.gif" class="classList" onclick="changeClass(c732)"></img>
+        </div>
+      </div>
+      <div id="ni" onmouseover="niOver()" onmouseout="niOut()">
+        <div id="ninjaClass">
+          <img src="src/char/M/810.gif" class="classList" onclick="changeClass(c810)"></img>
+          <img src="src/char/M/831.gif" class="classList" onclick="changeClass(c831)"></img>
+        </div>
+      </div>
+      <div id="gu" onmouseover="guOver()" onmouseout="guOut()">
+        <div id="gunslingerClass">
+          <img src="src/char/M/910.gif" class="classList" onclick="changeClass(c910)"></img>
+          <img src="src/char/M/931.gif" class="classList" onclick="changeClass(c931)"></img>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="db/class.js"></script>
+    <script type="text/javascript" src="db/stats.js"></script>
+    <!--<script type="text/javascript" src="src/mstat.js"></script>-->
+    <script type="text/javascript" src="src/statcal.js"></script>
+    <script type="text/javascript" src="src/level.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+  </html>
