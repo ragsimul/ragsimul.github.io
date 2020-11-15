@@ -526,13 +526,16 @@ ul:hover li{
 }
 
 .footerleft{
-  float: right;
-  margin: 15px 20px;
-  font-size: 30px;
-}
-
-.footerright{
   margin-left: 20px;
   float:left;
   text-align: left;
 }
+
+.footerright{
+  float: right;
+  letter-spacing: 10px;
+  margin: 15px 20px;
+  font-size: 30px;
+}
+
+
