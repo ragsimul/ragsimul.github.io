@@ -526,6 +526,7 @@ ul:hover li{
 }
 
 .footerleft{
+  position: fixed;
   margin-left: 20px;
   float:left;
   text-align: left;
