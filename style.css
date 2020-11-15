@@ -2,12 +2,85 @@ body{
   font-family: 'Arial', 'Dotum';
   font-size: 12px;
   height: 100%;
-  overflow: hidden;
+
 }
 
 ::selection {
   background-color: rgba(124, 156, 225, 0.4) /* WebKit/Blink Browsers */
 }
+
+
+
+#sidebar{
+  margin-left: -20px;
+  width:160px;
+  float: left;
+  height: 600px;
+}
+
+ul{
+  width: 90px;
+
+}
+
+ul img{
+  height: 35px;
+  width: 100%;
+  object-fit: cover;
+  border-left: 4px solid #000000;
+  background-color: #efefef;
+}
+
+.jobcontainer{
+  position: relative;
+  text-align: right;
+
+}
+
+.jobname{
+  position:absolute;
+  font-size: 14px;
+  right: 1px;
+  font-weight: 900;
+  margin-top: -15px;
+  line-height: 12px;
+  -webkit-text-stroke: 0.3px white;
+}
+.jobnamet{
+  position:absolute;
+  font-size: 14px;
+  right: 1px;
+  font-weight: 900;
+  margin-top: -30px;
+  -webkit-text-stroke: 0.3px white;
+  line-height: 14px;
+}
+
+
+li{
+  display:none;
+  width: 90px;
+  margin-top: 10px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+li img{
+  height: 35px;
+  width: 100%;
+  object-fit: cover;
+  border-left: 4px solid #c0c0c0;
+}
+ul:hover li{
+  display: block;
+
+}
+
+#main{
+  max-width: 1200px;
+  float: left;
+}
+
 #baseLV{
   width: 30px;
   border-top-style: hidden;
@@ -20,6 +93,8 @@ body{
   width: 440px;
   clear: both;
   float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 .rowTable {
   display: table-row;
@@ -187,9 +262,6 @@ body{
   outline:none;
 }
 
-.HP, .SP {
-
-}
 
 
 /* quick slot */
@@ -207,6 +279,10 @@ body{
   margin-bottom: 5px;
   width: 290px;
   height: 34px;
+}
+
+.quickslot img{
+  background-color: white;
 }
 
 .buffs {
@@ -276,7 +352,7 @@ body{
   max-height: 15px;
 }
 #STR:focus, #AGI:focus, #VIT:focus, #INT:focus, #DEX:focus, #LUK:focus{
-outline: none;
+  outline: none;
 }
 
 
@@ -431,7 +507,32 @@ outline: none;
 
 #classtree{
   border: none;
-width: 620px;
-height: 1050px;
-margin: -8px 0;
+  width: 620px;
+  height: auto;
+  margin: -8px;
+}
+
+
+
+#footer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 60px;
+  width: 100%;
+  color: #c0c0c0;
+  background-color: white;
+  border-top: 1px solid #c0c0c0;
+}
+
+.footerleft{
+  float: right;
+  margin: 15px 20px;
+  font-size: 30px;
+}
+
+.footerright{
+  margin-left: 20px;
+  float:left;
+  text-align: left;
 }
