@@ -321,6 +321,7 @@ ul:hover li{
 
 .mainstats{
   width: 25%;
+    font-family: 'Arial';
   display: table-cell;
 }
 .statName, .substatName{
