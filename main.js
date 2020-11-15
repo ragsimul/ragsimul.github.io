@@ -41,7 +41,7 @@ function changeClass(mainchar) {
   for(var i=0; i< classImgNum.length; i++){
     if (mainchar === classImgNum[i]){
       className.innerHTML = classNameEN[i];
-      document.getElementById("classtree").data = classSkilltree[i];
+      /*document.getElementById("classtree").data = classSkilltree[i];*/
       if(fourthClasses.includes(className.innerHTML)){
         baseLV.value = maxLV_third;
         jobLV.value = '1';
