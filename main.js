@@ -18,6 +18,8 @@ var maxLV_fourth = 250;
 var statcost = 48;
 
 function changeClass(mainchar) {
+
+  /*
   if (char.style.display ==="none"){
     char.style.display = "block";
   }else{
@@ -32,13 +34,14 @@ function changeClass(mainchar) {
     ta.style.display = "none";
     ni.style.display = "none";
     gu.style.display = "none";
-  }
+  }*/
 
   document.getElementById("classChar").src = mainchar;
 
   for(var i=0; i< classImgNum.length; i++){
     if (mainchar === classImgNum[i]){
       className.innerHTML = classNameEN[i];
+      document.getElementById("classtree").data = classSkilltree[i];
       if(fourthClasses.includes(className.innerHTML)){
         baseLV.value = maxLV_third;
         jobLV.value = '1';
