@@ -521,6 +521,7 @@ ul:hover li{
   height: 60px;
   width: 100%;
   color: #c0c0c0;
+  padding-bottom: 5px;
   background-color: white;
   border-top: 1px solid #c0c0c0;
 }
