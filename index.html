@@ -174,240 +174,237 @@
 </div>
 -->
 
-<div class="tableTitle">스테이터스</div>
-<div class="statTable">
-  <div class="statBody">
-    <div class="rowTable">
-      <div class="mainstats">
-        <div id="strblock">
-          <div class="statName">Str</div>
-          <div class="stats"><div id="STR" onkeypress="return (this.innerText.length < 3)"  contenteditable="true">1</div></div>
-          <div class="statBonus"><div id="STRBonus">0</div></div>
-          <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-          <div class="statsAdd"><div id="STRAdd">2</div></div>
-        </div>
-      </div>
-      <div class="substats">
-        <div class="substatName">Atk</div>
-        <div class="substat"><div id="ATK">1</div><div id="ATKADD">0</div></div>
-      </div>
-      <div class="substats">
-        <div class="substatName">Def</div>
-        <div class="substat"><div id="DEF">1</div><div id="DEFADD">0</div></div>
-      </div>
-    </div>
-    <div class="rowTable">
-      <div class="mainstats">
-        <div id="agiblock">
-          <div class="statName">Agi</div>
-          <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="AGI" contenteditable="true">1</div></div>
-          <div class="statBonus"><div id="AGIBonus">0</div></div>
-          <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-          <div class="statsAdd"><div id="AGIAdd">2</div></div>
-        </div>
-      </div>
-      <div class="substats">
-        <div class="substatName">Matk</div>
-        <div class="substat"><div id="MATK">1</div><div id="MATKADD">0</div></div>
-      </div>
-      <div class="substats">
-        <div class="substatName">Mdef</div>
-        <div class="substat"><div id="MDEF">1</div><div id="MDEFADD">0</div></div>
-      </div>
-    </div>
-    <div class="rowTable">
-      <div class="mainstats">
-        <div id="vitblock">
-          <div class="statName">Vit</div>
-          <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="VIT" contenteditable="true">1</div></div>
-          <div class="statBonus"><div id="VITBonus">0</div></div>
-          <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-          <div class="statsAdd"><div id="VITAdd">2</div></div>
-        </div>
-      </div>
-      <div class="substats">
-        <div class="substatName">Hit</div>
-        <div class="substat"><div id="HIT">177</div></div>
-      </div>
-      <div class="substats">
-        <div class="substatName">Flee</div>
-        <div class="substat"><div id="FLEE">102</div><div id="FLEEADD">0</div></div>
-      </div>
-    </div>
-    <div class="rowTable">
-      <div class="mainstats">
-        <div id="intblock">
-          <div class="statName">Int</div>
-          <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="INT" contenteditable="true">1</div></div>
-          <div class="statBonus"><div id="INTBonus">0</div></div>
-          <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-          <div class="statsAdd"><div id="INTAdd">2</div></div>
-        </div>
-      </div>
-      <div class="substats">
-        <div class="substatName">Critical</div>
-        <div class="substat"><div id="CRIT">1</div></div>
-      </div>
-      <div class="substats">
-        <div class="substatName">Aspd</div>
-        <div class="substat"><div id="ASPD">156</div></div>
-      </div>
-    </div>
-    <div class="rowTable">
-      <div class="mainstats">
-        <div id="dexblock">
-          <div class="statName">Dex</div>
-          <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="DEX" contenteditable="true">1</div></div>
-          <div class="statBonus"><div id="DEXBonus">0</div></div>
-          <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-          <div class="statsAdd"><div id="DEXAdd">2</div></div>
-        </div>
-      </div>
-      <div class="substats">
-        <div class="substatName">Casting</div>
-        <div class="substat"><div id="CAST">0</div></div>
-      </div>
-      <div class="substatsblank">
-      </div>
-    </div>
-    <div class="rowTable">
-      <div class="mainstats">
-        <div id="lukblock">
-          <div class="statName">Luk</div>
-          <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="LUK" contenteditable="true">1</div></div>
-          <div class="statBonus"><div id="LUKBonus">0</div></div>
-          <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-          <div class="statsAdd"><div id="LUKAdd">2</div></div>
-        </div>
-      </div>
-      <div class="substats">
-        <div class="substatName">Status Point</div>
-      </div>
-      <div class="substats">
-        <div class="substatName"></div>
-        <div class="substat"><div id="StatPoint">48</div></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- special stats -->
-<div id="tstatTitle" onclick="displayTstat()"><i id = "tstatTog"class="fas fa-angle-double-down" style="color:#3355D9;"></i>특성 스테이터스</div>
-<div id = "tstat">
-  <div class="tstatTable">
-    <div class="statBody">
-      <div class="rowTable">
-        <div class="mainstats">
-          <div id="powblock">
-            <div class="statName">Pow</div>
-            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="POW" contenteditable="true">0</div></div>
-            <div class="statBonus"><div id="POWBonus">0</div></div>
-            <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-            <div class="statsAdd"><div id="POWAdd">1</div></div>
+      <div class="tableTitle">스테이터스</div>
+      <div class="statTable">
+        <div class="statBody">
+          <div class="rowTable">
+            <div class="mainstats">
+              <div id="strblock">
+                <div class="statName">Str</div>
+                <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="STR" contenteditable="true">1</div></div>
+                <div class="statBonus"><div id="STRBonus">0</div></div>
+                <div class="statIncrement" onclick="incSTR()"><i class="fas fa-caret-right"></i></div>
+                <div class="statsAdd"><div id="STRAdd">2</div></div>
+              </div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Atk</div>
+              <div class="substat"><div id="ATK">1</div><div id="ATKADD">0</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Def</div>
+              <div class="substat"><div id="DEF">1</div><div id="DEFADD">0</div></div>
+            </div>
+          </div>
+          <div class="rowTable">
+            <div class="mainstats">
+              <div id="agiblock">
+                <div class="statName">Agi</div>
+                <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="AGI" contenteditable="true">1</div></div>
+                <div class="statBonus"><div id="AGIBonus">0</div></div>
+                <div class="statIncrement" onclick="incAGI()"><i class="fas fa-caret-right"></i></div>
+                <div class="statsAdd"><div id="AGIAdd">2</div></div>
+              </div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Matk</div>
+              <div class="substat"><div id="MATK">1</div><div id="MATKADD">0</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Mdef</div>
+              <div class="substat"><div id="MDEF">1</div><div id="MDEFADD">0</div></div>
+            </div>
+          </div>
+          <div class="rowTable">
+            <div class="mainstats">
+              <div id="vitblock">
+                <div class="statName">Vit</div>
+                <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="VIT" contenteditable="true">1</div></div>
+                <div class="statBonus"><div id="VITBonus">0</div></div>
+                <div class="statIncrement" onclick="incVIT()"><i class="fas fa-caret-right"></i></div>
+                <div class="statsAdd"><div id="VITAdd">2</div></div>
+              </div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Hit</div>
+              <div class="substat"><div id="HIT">177</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Flee</div>
+              <div class="substat"><div id="FLEE">102</div><div id="FLEEADD">0</div></div>
+            </div>
+          </div>
+          <div class="rowTable">
+            <div class="mainstats">
+              <div id="intblock">
+                <div class="statName">Int</div>
+                <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="INT" contenteditable="true">1</div></div>
+                <div class="statBonus"><div id="INTBonus">0</div></div>
+                <div class="statIncrement" onclick="incINT()"><i class="fas fa-caret-right"></i></div>
+                <div class="statsAdd"><div id="INTAdd">2</div></div>
+              </div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Critical</div>
+              <div class="substat"><div id="CRIT">1</div></div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Aspd</div>
+              <div class="substat"><div id="ASPD">156</div></div>
+            </div>
+          </div>
+          <div class="rowTable">
+            <div class="mainstats">
+              <div id="dexblock">
+                <div class="statName">Dex</div>
+                <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="DEX" contenteditable="true">1</div></div>
+                <div class="statBonus"><div id="DEXBonus">0</div></div>
+                <div class="statIncrement" onclick="incDEX()"><i class="fas fa-caret-right"></i></div>
+                <div class="statsAdd"><div id="DEXAdd">2</div></div>
+              </div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Casting</div>
+              <div class="substat"><div id="CAST">0</div></div>
+            </div>
+            <div class="substatsblank">
+            </div>
+          </div>
+          <div class="rowTable">
+            <div class="mainstats">
+              <div id="lukblock">
+                <div class="statName">Luk</div>
+                <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="LUK" contenteditable="true">1</div></div>
+                <div class="statBonus"><div id="LUKBonus">0</div></div>
+                <div class="statIncrement" onclick="incLUK()"><i class="fas fa-caret-right"></i></div>
+                <div class="statsAdd"><div id="LUKAdd">2</div></div>
+              </div>
+            </div>
+            <div class="substats">
+              <div class="substatName">Status Point</div>
+            </div>
+            <div class="substats">
+              <div class="substatName"></div>
+              <div class="substat"><div id="StatPoint">48</div></div>
+            </div>
           </div>
         </div>
-        <div class="substats">
-          <div class="substatName">P.Atk</div>
-          <div class="substat"><div id="PATK">0</div></div>
-        </div>
-        <div class="substats">
-          <div class="substatName">Res</div>
-          <div class="substat"><div id="RES">0</div></div>
-        </div>
       </div>
-      <div class="rowTable">
-        <div class="mainstats">
-          <div id="stablock">
-            <div class="statName">Sta</div>
-            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="STA" contenteditable="true">0</div></div>
-            <div class="statBonus"><div id="STABonus">0</div></div>
-            <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-            <div class="statsAdd"><div id="STAAdd">1</div></div>
-          </div>
-        </div>
-        <div class="substats">
-          <div class="substatName">S.Matk</div>
-          <div class="substat"><div id="SMATK">0</div></div>
-        </div>
-        <div class="substats">
-          <div class="substatName">Mres</div>
-          <div class="substat"><div id="MRES">0</div></div>
-        </div>
-      </div>
-      <div class="rowTable">
-        <div class="mainstats">
-          <div id="wisblock">
-            <div class="statName">Wis</div>
-            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="WIS" contenteditable="true">0</div></div>
-            <div class="statBonus"><div id="WISBonus">0</div></div>
-            <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-            <div class="statsAdd"><div id="WISAdd">1</div></div>
-          </div>
-        </div>
-        <div class="substats">
-          <div class="substatName">H.Plus</div>
-          <div class="substat"><div id="HPLUS">0</div></div>
-        </div>
-        <div class="substatsblank">
-        </div>
-      </div>
-      <div class="rowTable">
-        <div class="mainstats">
-          <div id="splblock">
-            <div class="statName">Spl</div>
-            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="SPL" contenteditable="true">0</div></div>
-            <div class="statBonus"><div id="SPLBonus">0</div></div>
-            <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-            <div class="statsAdd"><div id="SPLAdd">1</div></div>
-          </div>
-        </div>
-        <div class="substats">
-          <div class="substatName">C.Rate</div>
-          <div class="substat"><div id="CRATE">0</div></div>
-        </div>
-        <div class="substatsblank">
-        </div>
-      </div>
-      <div class="rowTable">
-        <div class="mainstats">
-          <div id="conblock">
-            <div class="statName">Con</div>
-            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="CON" contenteditable="true">0</div></div>
-            <div class="statBonus"><div id="CONBonus">0</div></div>
-            <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-            <div class="statsAdd"><div id="CONAdd">1</div></div>
-          </div>
-        </div>
-        <div class="substats">
-          <div class="substatName">T.Status Point</div>
-        </div>
-        <div class="substats">
-          <div class="substat"><div id="TStatPoint">0</div></div>
-        </div>
-      </div>
-      <div class="rowTable">
-        <div class="mainstats">
-          <div id="crtblock">
-            <div class="statName">Crt</div>
-            <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="CRT" contenteditable="true">0</div></div>
-            <div class="statBonus"><div id="CRTBonus">0</div></div>
-            <div class="statIncrement"><img src="./src/img/statInc.png"></img></div>
-            <div class="statsAdd"><div id="CRTAdd">1</div></div>
-          </div>
-        </div>
-        <div class="substats">
-          <div class="substatName"></div>
-        </div>
-        <div class="substats">
-        </div>
-      </div>
-    </div>
-  </div><!-- end of .tstatTable -->
-</div><!-- end of .tstat -->
-
-</div> <!-- end of <table> -->
+      
+      
+      
+      <!-- special stats -->
+      <div id="tstatTitle" onclick="displayTstat()"><i id = "tstatTog"class="fas fa-angle-double-down" style="color:#3355D9;"></i>특성 스테이터스</div>
+      <div id = "tstat">
+        <div class="tstatTable">
+          <div class="statBody">
+            <div class="rowTable">
+              <div class="mainstats">
+                <div id="powblock">
+                  <div class="statName">Pow</div>
+                  <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="POW" contenteditable="true">0</div></div>
+                  <div class="statBonus"><div id="POWBonus">0</div></div>
+                  <div class="statIncrement" onclick="incPOW()"><i class="fas fa-caret-right"></i></div>
+                  <div class="statsAdd"><div id="POWAdd">1</div></div>
+                </div>
+              </div>
+              <div class="substats">
+                <div class="substatName">P.Atk</div>
+                <div class="substat"><div id="PATK">0</div></div>
+              </div>
+              <div class="substats">
+                <div class="substatName">Res</div>
+                <div class="substat"><div id="RES">0</div></div>
+              </div>
+            </div>
+            <div class="rowTable">
+              <div class="mainstats">
+                <div id="stablock">
+                  <div class="statName">Sta</div>
+                  <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="STA" contenteditable="true">0</div></div>
+                  <div class="statBonus"><div id="STABonus">0</div></div>
+                  <div class="statIncrement" onclick="incSTA()"><i class="fas fa-caret-right"></i></div>
+                  <div class="statsAdd"><div id="STAAdd">1</div></div>
+                </div>
+              </div>
+              <div class="substats">
+                <div class="substatName">S.Matk</div>
+                <div class="substat"><div id="SMATK">0</div></div>
+              </div>
+              <div class="substats">
+                <div class="substatName">Mres</div>
+                <div class="substat"><div id="MRES">0</div></div>
+              </div>
+            </div>
+            <div class="rowTable">
+              <div class="mainstats">
+                <div id="wisblock">
+                  <div class="statName">Wis</div>
+                  <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="WIS" contenteditable="true">0</div></div>
+                  <div class="statBonus"><div id="WISBonus">0</div></div>
+                  <div class="statIncrement" onclick="incWIS()"><i class="fas fa-caret-right"></i></div>
+                  <div class="statsAdd"><div id="WISAdd">1</div></div>
+                </div>
+              </div>
+              <div class="substats">
+                <div class="substatName">H.Plus</div>
+                <div class="substat"><div id="HPLUS">0</div></div>
+              </div>
+              <div class="substatsblank">
+              </div>
+            </div>
+            <div class="rowTable">
+              <div class="mainstats">
+                <div class="statName">Spl</div>
+                <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="SPL" contenteditable="true">0</div></div>
+                <div class="statBonus"><div id="SPLBonus">0</div></div>
+                <div class="statIncrement" onclick="incSPL()"><i class="fas fa-caret-right"></i></div>
+                <div class="statsAdd"><div id="SPLAdd">1</div></div>
+              </div>
+              <div class="substats">
+                <div class="substatName">C.Rate</div>
+                <div class="substat"><div id="CRATE">0</div></div>
+              </div>
+              <div class="substatsblank">
+              </div>
+            </div>
+            <div class="rowTable">
+              <div class="mainstats">
+                <div id="conblock">
+                  <div class="statName">Con</div>
+                  <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="CON" contenteditable="true">0</div></div>
+                  <div class="statBonus"><div id="CONBonus">0</div></div>
+                  <div class="statIncrement" onclick="incCON()"><i class="fas fa-caret-right"></i></div>
+                  <div class="statsAdd"><div id="CONAdd">1</div></div>
+                </div>
+              </div>
+              <div class="substats">
+                <div class="substatName">T.Status Point</div>
+              </div>
+              <div class="substats">
+                <div class="substat"><div id="TStatPoint">0</div></div>
+              </div>
+            </div>
+            <div class="rowTable">
+              <div class="mainstats">
+                <div id="crtblock">
+                  <div class="statName">Crt</div>
+                  <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="CRT" contenteditable="true">0</div></div>
+                  <div class="statBonus"><div id="CRTBonus">0</div></div>
+                  <div class="statIncrement" onclick="incCRT()"><i class="fas fa-caret-right"></i></div>
+                  <div class="statsAdd"><div id="CRTAdd">1</div></div>
+                </div>
+                <div class="substats">
+                  <div class="substatName"></div>
+                </div>
+                <div class="substats">
+                </div>
+              </div>
+            </div>
+          </div><!-- end of .tstatTable -->
+        </div><!-- end of .tstat -->
+        
+      </div> <!-- end of <table> -->
   
 </div> <!--end of main -->
 <!--<object id="classtree" type="text/html" data="skills/000.html"></object>-->
