@@ -50,7 +50,7 @@ function statreset(){
 
 
 /* stats */
-document.getElementById("STR").addEventListener('keypress', (e) => {
+document.getElementById("strblock").addEventListener('keypress', (e) => {
   if (e.which === 13 || (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -58,7 +58,7 @@ document.getElementById("STR").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("STR").addEventListener('mousewheel',function (e) {
+document.getElementById("strblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if(e.wheelDeltaY > 0){
@@ -83,7 +83,7 @@ document.getElementById("STR").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("AGI").addEventListener('keypress', (e) => {
+document.getElementById("agiblock").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -91,7 +91,7 @@ document.getElementById("AGI").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("AGI").addEventListener('mousewheel',function (e) {
+document.getElementById("agiblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if(e.wheelDeltaY > 0){
@@ -116,7 +116,7 @@ document.getElementById("AGI").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("VIT").addEventListener('keypress', (e) => {
+document.getElementById("vitblock").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -124,7 +124,7 @@ document.getElementById("VIT").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("VIT").addEventListener('mousewheel',function (e) {
+document.getElementById("vitblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if(e.wheelDeltaY > 0){
@@ -149,7 +149,7 @@ document.getElementById("VIT").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("INT").addEventListener('keypress', (e) => {
+document.getElementById("intblock").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -157,7 +157,7 @@ document.getElementById("INT").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("INT").addEventListener('mousewheel',function (e) {
+document.getElementById("intblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if(e.wheelDeltaY > 0){
@@ -182,7 +182,7 @@ document.getElementById("INT").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("DEX").addEventListener('keypress', (e) => {
+document.getElementById("dexblock").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -190,7 +190,7 @@ document.getElementById("DEX").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("DEX").addEventListener('mousewheel',function (e) {
+document.getElementById("dexblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if(e.wheelDeltaY > 0){
@@ -215,7 +215,7 @@ document.getElementById("DEX").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("LUK").addEventListener('keypress', (e) => {
+document.getElementById("lukblock").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -223,7 +223,7 @@ document.getElementById("LUK").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("LUK").addEventListener('mousewheel',function (e) {
+document.getElementById("lukblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if(e.wheelDeltaY > 0){
@@ -249,7 +249,7 @@ document.getElementById("LUK").addEventListener('mousewheel',function (e) {
 });
 
 /* tstats */
-document.getElementById("POW").addEventListener('keypress', (e) => {
+document.getElementById("powblock").addEventListener('keypress', (e) => {
   if (e.which === 13 || (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -257,7 +257,7 @@ document.getElementById("POW").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("POW").addEventListener('mousewheel',function (e) {
+document.getElementById("powblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
@@ -281,7 +281,7 @@ document.getElementById("POW").addEventListener('mousewheel',function (e) {
   }statdisplay();
 });
 
-document.getElementById("STA").addEventListener('keypress', (e) => {
+document.getElementById("stablock").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -290,7 +290,7 @@ document.getElementById("STA").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("STA").addEventListener('mousewheel',function (e) {
+document.getElementById("stablock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
@@ -315,7 +315,7 @@ document.getElementById("STA").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("WIS").addEventListener('keypress', (e) => {
+document.getElementById("wisblock").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -324,7 +324,7 @@ document.getElementById("WIS").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("WIS").addEventListener('mousewheel',function (e) {
+document.getElementById("wisblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
@@ -348,7 +348,7 @@ document.getElementById("WIS").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("SPL").addEventListener('keypress', (e) => {
+document.getElementById("splblock").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -357,7 +357,7 @@ document.getElementById("SPL").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("SPL").addEventListener('mousewheel',function (e) {
+document.getElementById("splblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
@@ -381,7 +381,7 @@ document.getElementById("SPL").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("CON").addEventListener('keypress', (e) => {
+document.getElementById("conblock").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -390,7 +390,7 @@ document.getElementById("CON").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("CON").addEventListener('mousewheel',function (e) {
+document.getElementById("conblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
@@ -414,7 +414,7 @@ document.getElementById("CON").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("CRT").addEventListener('keypress', (e) => {
+document.getElementById("crtblock").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -422,7 +422,7 @@ document.getElementById("CRT").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("CRT").addEventListener('mousewheel',function (e) {
+document.getElementById("crtblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
