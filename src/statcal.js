@@ -60,7 +60,7 @@ document.getElementById("strblock").addEventListener('keypress', (e) => {
 });
 document.getElementById("strblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("STR").innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -93,7 +93,7 @@ document.getElementById("agiblock").addEventListener('keypress', (e) => {
 });
 document.getElementById("agiblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("AGI").innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -126,7 +126,7 @@ document.getElementById("vitblock").addEventListener('keypress', (e) => {
 });
 document.getElementById("vitblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("VIT").innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -159,7 +159,7 @@ document.getElementById("intblock").addEventListener('keypress', (e) => {
 });
 document.getElementById("intblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("INT").innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -192,7 +192,7 @@ document.getElementById("dexblock").addEventListener('keypress', (e) => {
 });
 document.getElementById("dexblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("DEX").innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -225,7 +225,7 @@ document.getElementById("lukblock").addEventListener('keypress', (e) => {
 });
 document.getElementById("lukblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("LUK").innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -259,7 +259,7 @@ document.getElementById("powblock").addEventListener('keypress', (e) => {
 });
 document.getElementById("powblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("POW").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -292,7 +292,7 @@ document.getElementById("stablock").addEventListener('keypress', (e) => {
 });
 document.getElementById("stablock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("STA").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -326,7 +326,7 @@ document.getElementById("wisblock").addEventListener('keypress', (e) => {
 });
 document.getElementById("wisblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("WIS").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -359,7 +359,7 @@ document.getElementById("splblock").addEventListener('keypress', (e) => {
 });
 document.getElementById("splblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("SPL").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -392,7 +392,7 @@ document.getElementById("conblock").addEventListener('keypress', (e) => {
 });
 document.getElementById("conblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("CON").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -424,7 +424,7 @@ document.getElementById("crtblock").addEventListener('keypress', (e) => {
 });
 document.getElementById("crtblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("CRT").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -495,7 +495,6 @@ var remaintcost = 0;
 function statdisplay(){
   document.getElementById("STR").innerHTML = str;
   document.getElementById("STRAdd").innerHTML = stra;
-
   document.getElementById("AGI").innerHTML = agi;
   document.getElementById("AGIAdd").innerHTML = agia;
   document.getElementById("VIT").innerHTML = vit;
@@ -506,8 +505,6 @@ function statdisplay(){
   document.getElementById("DEXAdd").innerHTML = dexa;
   document.getElementById("LUK").innerHTML = luk;
   document.getElementById("LUKAdd").innerHTML = luka;
-
-
 
   document.getElementById("POW").innerHTML = pow;
   document.getElementById("POWAdd").innerHTML = powa;
