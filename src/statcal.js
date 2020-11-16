@@ -153,51 +153,45 @@ function incLUK(){
 
 function incPOW(){
   var num = Number(document.getElementById("POW").innerHTML);
-  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
-    maxstat = 99;
+  if (fourthClasses.includes(className.innerHTML)){
+    if(num >= tstatmax) return false;
+    pow = num + 1 ;
+    powa = tstat_cost[pow];
+    powcost += tstat_cost[pow];
+    if(pow === tstatmax){
+      powa = 0;
+    }
   }else{
-    maxstat = 130;
-  }
-  if(num >= tstatmax) return false;
-  pow = num + 1;
-  powa = tstat_cost[pow];
-  powcost += tstat_cost[pow];
-  if(pow === maxstat){
-    powa = 0;
   }
   statdisplay();
 }
 
 function incSTA(){
   var num = Number(document.getElementById("STA").innerHTML);
-  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
-    maxstat = 99;
+  if (fourthClasses.includes(className.innerHTML)){
+    if(num >= tstatmax) return false;
+    sta = num + 1 ;
+    staa = tstat_cost[sta];
+    stacost += tstat_cost[sta];
+    if(sta === tstatmax){
+      staa = 0;
+    }
   }else{
-    maxstat = 130;
-  }
-  if(num >= tstatmax) return false;
-  sta = num + 1;
-  staa = tstat_cost[sta];
-  stacost += tstat_cost[sta];
-  if(sta === maxstat){
-    staa = 0;
   }
   statdisplay();
 }
 
 function incWIS(){
   var num = Number(document.getElementById("WIS").innerHTML);
-  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
-    maxstat = 99;
+  if (fourthClasses.includes(className.innerHTML)){
+    if(num >= tstatmax) return false;
+    wis = num + 1 ;
+    wisa = tstat_cost[wis];
+    wiscost += tstat_cost[wis];
+    if(wis === tstatmax){
+      wisa = 0;
+    }
   }else{
-    maxstat = 130;
-  }
-  if(num >= tstatmax) return false;
-  wis = num + 1 ;
-  wisa = tstat_cost[wis];
-  wiscost += tstat_cost[wis];
-  if(wis === maxstat){
-    wisa = 0;
   }
   statdisplay();
 }
@@ -292,9 +286,9 @@ document.getElementById("AGI").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("AGI").addEventListener('mousewheel',function (e) {
+document.getElementById("agiblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("AGI").innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -325,9 +319,9 @@ document.getElementById("VIT").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("VIT").addEventListener('mousewheel',function (e) {
+document.getElementById("vitblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("VIT").innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -358,9 +352,9 @@ document.getElementById("INT").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("INT").addEventListener('mousewheel',function (e) {
+document.getElementById("intblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("INT").innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -391,9 +385,9 @@ document.getElementById("DEX").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("DEX").addEventListener('mousewheel',function (e) {
+document.getElementById("dexblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("DEX").innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -424,9 +418,9 @@ document.getElementById("LUK").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("LUK").addEventListener('mousewheel',function (e) {
+document.getElementById("lukblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("LUK").innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -458,9 +452,9 @@ document.getElementById("POW").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("POW").addEventListener('mousewheel',function (e) {
+document.getElementById("powblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("POW").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -491,9 +485,9 @@ document.getElementById("STA").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("STA").addEventListener('mousewheel',function (e) {
+document.getElementById("stablock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("STA").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -525,9 +519,9 @@ document.getElementById("WIS").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("WIS").addEventListener('mousewheel',function (e) {
+document.getElementById("wisblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("WIS").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -558,9 +552,9 @@ document.getElementById("SPL").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("SPL").addEventListener('mousewheel',function (e) {
+document.getElementById("splblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("spl").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -591,9 +585,9 @@ document.getElementById("CON").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("CON").addEventListener('mousewheel',function (e) {
+document.getElementById("conblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("CON").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -623,9 +617,9 @@ document.getElementById("CRT").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("CRT").addEventListener('mousewheel',function (e) {
+document.getElementById("crtblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(this.innerHTML);
+  var num = Number(document.getElementById("CRT").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
