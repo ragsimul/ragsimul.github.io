@@ -553,7 +553,7 @@ document.getElementById("SPL").addEventListener('keypress', (e) => {
 });
 document.getElementById("splblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("spl").innerHTML);
+  var num = Number(document.getElementById("SPL").innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
