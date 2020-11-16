@@ -50,6 +50,210 @@ function statreset(){
 
 
 /* stats */
+
+
+function incSTR(){
+  var num = Number(document.getElementById("STR").innerHTML);
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+    maxstat = 99;
+  }else{
+    maxstat = 130;
+  }
+  if(num >= maxstat) return false;
+  str = num + 1;
+  stra = stat_cost[str-1];
+  strcost += stat_cost[str-2];
+  if(str === maxstat){
+    stra = 0;
+  }
+  statdisplay();
+}
+
+function incAGI(){
+  var num = Number(document.getElementById("AGI").innerHTML);
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+    maxstat = 99;
+  }else{
+    maxstat = 130;
+  }
+  if(num >= maxstat) return false;
+  agi = num + 1;
+  agia = stat_cost[agi-1];
+  agicost += stat_cost[agi-2];
+  if(agi === maxstat){
+    agia = 0;
+  }
+  statdisplay();
+}
+
+function incVIT(){
+  var num = Number(document.getElementById("VIT").innerHTML);
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+    maxstat = 99;
+  }else{
+    maxstat = 130;
+  }
+  if(num >= maxstat) return false;
+  vit = num + 1 ;
+  vita = stat_cost[vit-1];
+  vitcost += stat_cost[vit-2];
+  if(vit === maxstat){
+    vita = 0;
+  }
+  statdisplay();
+}
+
+function incINT(){
+  var num = Number(document.getElementById("INT").innerHTML);
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+    maxstat = 99;
+  }else{
+    maxstat = 130;
+  }
+  if(num >= maxstat) return false;
+  int = num + 1 ;
+  inta = stat_cost[int-1];
+  intcost += stat_cost[int-2];
+  if(int === maxstat){
+    inta = 0;
+  }
+  statdisplay();
+}
+
+function incDEX(){
+  var num = Number(document.getElementById("DEX").innerHTML);
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+    maxstat = 99;
+  }else{
+    maxstat = 130;
+  }
+  if(num >= maxstat) return false;
+  dex = num + 1 ;
+  dexa = stat_cost[dex-1];
+  dexcost += stat_cost[dex-2];
+  if(dex === maxstat){
+    dexa = 0;
+  }
+  statdisplay();
+}
+
+function incLUK(){
+  var num = Number(document.getElementById("LUK").innerHTML);
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+    maxstat = 99;
+  }else{
+    maxstat = 130;
+  }
+  if(num >= maxstat) return false;
+  luk = num + 1 ;
+  luka = stat_cost[luk-1];
+  lukcost += stat_cost[luk-2];
+  if(luk === maxstat){
+    luka = 0;
+  }
+  statdisplay();
+}
+
+function incPOW(){
+  var num = Number(document.getElementById("POW").innerHTML);
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+    maxstat = 99;
+  }else{
+    maxstat = 130;
+  }
+  if(num >= tstatmax) return false;
+  pow = num + 1;
+  powa = tstat_cost[pow];
+  powcost += tstat_cost[pow];
+  if(pow === maxstat){
+    powa = 0;
+  }
+  statdisplay();
+}
+
+function incSTA(){
+  var num = Number(document.getElementById("STA").innerHTML);
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+    maxstat = 99;
+  }else{
+    maxstat = 130;
+  }
+  if(num >= tstatmax) return false;
+  sta = num + 1;
+  staa = tstat_cost[sta];
+  stacost += tstat_cost[sta];
+  if(sta === maxstat){
+    staa = 0;
+  }
+  statdisplay();
+}
+
+function incWIS(){
+  var num = Number(document.getElementById("WIS").innerHTML);
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+    maxstat = 99;
+  }else{
+    maxstat = 130;
+  }
+  if(num >= tstatmax) return false;
+  wis = num + 1 ;
+  wisa = tstat_cost[wis];
+  wiscost += tstat_cost[wis];
+  if(wis === maxstat){
+    wisa = 0;
+  }
+  statdisplay();
+}
+
+function incSPL(){
+  var num = Number(document.getElementById("SPL").innerHTML);
+  if (fourthClasses.includes(className.innerHTML)){
+    if(num >= tstatmax) return false;
+    spl = num + 1 ;
+    spla = tstat_cost[spl];
+    splcost += tstat_cost[spl];
+    if(spl === tstatmax){
+      spla = 0;
+    }
+  }else{
+  }
+  statdisplay();
+}
+
+function incCON(){
+  var num = Number(document.getElementById("CON").innerHTML);
+  if (fourthClasses.includes(className.innerHTML)){
+    if(num >= tstatmax) return false;
+    con = num + 1 ;
+    cona = tstat_cost[con];
+    concost += tstat_cost[con];
+    if(con === tstatmax){
+      cona = 0;
+    }
+  }else{
+  }statdisplay();
+}
+
+
+function incCRT(){
+  var num = Number(document.getElementById("CRT").innerHTML);
+  if (fourthClasses.includes(className.innerHTML)){
+
+    if(num >= tstatmax) return false;
+    crt = num + 1 ;
+    crta = tstat_cost[crt];
+    crtcost += tstat_cost[crt];
+    if(crt === tstatmax){
+      crta = 0;
+    }
+  }else{
+  }
+  statdisplay();
+}
+
+
+
+
 document.getElementById("strblock").addEventListener('keypress', (e) => {
   if (e.which === 13 || (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
