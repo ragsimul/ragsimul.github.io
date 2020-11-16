@@ -22,8 +22,7 @@ var crtb = 0;
 
 
 var strcost = 0; agicost = 0; vitcost = 0; intcost = 0; dexcost = 0; lukcost = 0;
-
-var powcost = 0; stacost = 0; wiscost = 0; splcost = 0; concost = 0; crtcost = 0; tstatcost = 7;
+var powcost = 0; stacost = 0; wiscost = 0; splcost = 0; concost = 0; crtcost = 0; tstatcost = 0;
 
 var tstatmax = 100;
 
