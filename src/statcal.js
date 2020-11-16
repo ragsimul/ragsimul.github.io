@@ -39,6 +39,7 @@ function statreset(){
   powa = 1; staa = 1; wisa = 1; spla = 1; cona = 1; crta = 1;
   powcost = 0;  stacost = 0;  wiscost = 0;  splcost = 0;  concost = 0;  crtcost = 0;
 
+
   if(fourthClasses.includes(className.innerHTML) || thirdClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
     remaincost = stat_transcendence[baseLV.value-1];
     statdisplay();
@@ -47,10 +48,6 @@ function statreset(){
     statdisplay();
   }
 }
-
-
-/* stats */
-
 
 function incSTR(){
   var num = Number(document.getElementById("STR").innerHTML);
@@ -251,10 +248,8 @@ function incCRT(){
   statdisplay();
 }
 
-
-
-
-document.getElementById("strblock").addEventListener('keypress', (e) => {
+/* stats */
+document.getElementById("STR").addEventListener('keypress', (e) => {
   if (e.which === 13 || (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -262,6 +257,8 @@ document.getElementById("strblock").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
+
+
 document.getElementById("strblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
   var num = Number(document.getElementById("STR").innerHTML);
@@ -287,7 +284,7 @@ document.getElementById("strblock").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("agiblock").addEventListener('keypress', (e) => {
+document.getElementById("AGI").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -295,9 +292,9 @@ document.getElementById("agiblock").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("agiblock").addEventListener('mousewheel',function (e) {
+document.getElementById("AGI").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("AGI").innerHTML);
+  var num = Number(this.innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -320,7 +317,7 @@ document.getElementById("agiblock").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("vitblock").addEventListener('keypress', (e) => {
+document.getElementById("VIT").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -328,9 +325,9 @@ document.getElementById("vitblock").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("vitblock").addEventListener('mousewheel',function (e) {
+document.getElementById("VIT").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("VIT").innerHTML);
+  var num = Number(this.innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -353,7 +350,7 @@ document.getElementById("vitblock").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("intblock").addEventListener('keypress', (e) => {
+document.getElementById("INT").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -361,9 +358,9 @@ document.getElementById("intblock").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("intblock").addEventListener('mousewheel',function (e) {
+document.getElementById("INT").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("INT").innerHTML);
+  var num = Number(this.innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -386,7 +383,7 @@ document.getElementById("intblock").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("dexblock").addEventListener('keypress', (e) => {
+document.getElementById("DEX").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -394,9 +391,9 @@ document.getElementById("dexblock").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("dexblock").addEventListener('mousewheel',function (e) {
+document.getElementById("DEX").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("DEX").innerHTML);
+  var num = Number(this.innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -419,7 +416,7 @@ document.getElementById("dexblock").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("lukblock").addEventListener('keypress', (e) => {
+document.getElementById("LUK").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -427,9 +424,9 @@ document.getElementById("lukblock").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("lukblock").addEventListener('mousewheel',function (e) {
+document.getElementById("LUK").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("LUK").innerHTML);
+  var num = Number(this.innerHTML);
   if(e.wheelDeltaY > 0){
     if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
       maxstat = 99;
@@ -453,7 +450,7 @@ document.getElementById("lukblock").addEventListener('mousewheel',function (e) {
 });
 
 /* tstats */
-document.getElementById("powblock").addEventListener('keypress', (e) => {
+document.getElementById("POW").addEventListener('keypress', (e) => {
   if (e.which === 13 || (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -461,9 +458,9 @@ document.getElementById("powblock").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("powblock").addEventListener('mousewheel',function (e) {
+document.getElementById("POW").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("POW").innerHTML);
+  var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -485,7 +482,7 @@ document.getElementById("powblock").addEventListener('mousewheel',function (e) {
   }statdisplay();
 });
 
-document.getElementById("stablock").addEventListener('keypress', (e) => {
+document.getElementById("STA").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -494,9 +491,9 @@ document.getElementById("stablock").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("stablock").addEventListener('mousewheel',function (e) {
+document.getElementById("STA").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("STA").innerHTML);
+  var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -519,7 +516,7 @@ document.getElementById("stablock").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("wisblock").addEventListener('keypress', (e) => {
+document.getElementById("WIS").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -528,9 +525,9 @@ document.getElementById("wisblock").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("wisblock").addEventListener('mousewheel',function (e) {
+document.getElementById("WIS").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("WIS").innerHTML);
+  var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -552,7 +549,7 @@ document.getElementById("wisblock").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("splblock").addEventListener('keypress', (e) => {
+document.getElementById("SPL").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -561,9 +558,9 @@ document.getElementById("splblock").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("splblock").addEventListener('mousewheel',function (e) {
+document.getElementById("SPL").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("SPL").innerHTML);
+  var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -585,7 +582,7 @@ document.getElementById("splblock").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("conblock").addEventListener('keypress', (e) => {
+document.getElementById("CON").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -594,9 +591,9 @@ document.getElementById("conblock").addEventListener('keypress', (e) => {
   }
 
 });
-document.getElementById("conblock").addEventListener('mousewheel',function (e) {
+document.getElementById("CON").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("CON").innerHTML);
+  var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -618,7 +615,7 @@ document.getElementById("conblock").addEventListener('mousewheel',function (e) {
   statdisplay();
 });
 
-document.getElementById("crtblock").addEventListener('keypress', (e) => {
+document.getElementById("CRT").addEventListener('keypress', (e) => {
   if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
     e.preventDefault();
   }
@@ -626,9 +623,9 @@ document.getElementById("crtblock").addEventListener('keypress', (e) => {
     e.preventDefault();
   }
 });
-document.getElementById("crtblock").addEventListener('mousewheel',function (e) {
+document.getElementById("CRT").addEventListener('mousewheel',function (e) {
   e.preventDefault();
-  var num = Number(document.getElementById("CRT").innerHTML);
+  var num = Number(this.innerHTML);
   if (fourthClasses.includes(className.innerHTML)){
     if(e.wheelDeltaY > 0){
       if(num >= tstatmax) return false;
@@ -667,6 +664,7 @@ function statBonusAdj(){
       document.getElementById("DEXBonus").innerHTML = dexb;
       lukb = jobBonuses[i][jobLV.value-1][5];
       document.getElementById("LUKBonus").innerHTML = lukb;
+
     }
   }statcal();
 }
@@ -699,6 +697,7 @@ var remaintcost = 0;
 function statdisplay(){
   document.getElementById("STR").innerHTML = str;
   document.getElementById("STRAdd").innerHTML = stra;
+
   document.getElementById("AGI").innerHTML = agi;
   document.getElementById("AGIAdd").innerHTML = agia;
   document.getElementById("VIT").innerHTML = vit;
@@ -709,6 +708,8 @@ function statdisplay(){
   document.getElementById("DEXAdd").innerHTML = dexa;
   document.getElementById("LUK").innerHTML = luk;
   document.getElementById("LUKAdd").innerHTML = luka;
+
+
 
   document.getElementById("POW").innerHTML = pow;
   document.getElementById("POWAdd").innerHTML = powa;
@@ -784,28 +785,28 @@ function statcal(){
   //flee = 100 + BaseLv + AGI + Floor(LUK ÷ 5) + Bonus
   flee = 100 + parseInt(baseLV.value) + (agi+agib) + Math.floor((luk + lukb)/5)+ (con+conb)*2;
 
-   document.getElementById("ATK").innerHTML = atk;
-   document.getElementById("DEF").innerHTML = def;
-   document.getElementById("MATK").innerHTML = matk;
-   document.getElementById("MDEF").innerHTML = mdef;
-   document.getElementById("HIT").innerHTML = hit;
-   document.getElementById("CRIT").innerHTML = Math.ceil(crit);
-   document.getElementById("FLEE").innerHTML = flee;
+  document.getElementById("ATK").innerHTML = atk;
+  document.getElementById("DEF").innerHTML = def;
+  document.getElementById("MATK").innerHTML = matk;
+  document.getElementById("MDEF").innerHTML = mdef;
+  document.getElementById("HIT").innerHTML = hit;
+  document.getElementById("CRIT").innerHTML = Math.ceil(crit);
+  document.getElementById("FLEE").innerHTML = flee;
 
 
-   /* tstat cal */
-   // patk = pow/3 +
+  /* tstat cal */
+  // patk = pow/3 +
 
-   patk = Math.floor((pow + powb)/3) +  + Math.floor((con + conb)/5);
-   res = (sta+stab);
-   smatk = Math.floor((spl + splb)/3) + Math.floor((con + conb)/5);
-   mres = (wis+wisb);
-   hplus = (crt+crtb);
-   crate = Math.floor((crt+crtb)/3);
-   document.getElementById("PATK").innerHTML = patk;
-   document.getElementById("RES").innerHTML = res;
-   document.getElementById("SMATK").innerHTML = smatk;
-   document.getElementById("MRES").innerHTML = mres;
-   document.getElementById("HPLUS").innerHTML = hplus;
-   document.getElementById("CRATE").innerHTML = crate;
+  patk = Math.floor((pow + powb)/3) +  + Math.floor((con + conb)/5);
+  res = (sta+stab);
+  smatk = Math.floor((spl + splb)/3) + Math.floor((con + conb)/5);
+  mres = (wis+wisb);
+  hplus = (crt+crtb);
+  crate = Math.floor((crt+crtb)/3);
+  document.getElementById("PATK").innerHTML = patk;
+  document.getElementById("RES").innerHTML = res;
+  document.getElementById("SMATK").innerHTML = smatk;
+  document.getElementById("MRES").innerHTML = mres;
+  document.getElementById("HPLUS").innerHTML = hplus;
+  document.getElementById("CRATE").innerHTML = crate;
 }
