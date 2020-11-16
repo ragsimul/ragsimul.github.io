@@ -370,7 +370,10 @@ ul:hover li{
   content: "+"
 }
 
+
 .statIncrement {
+  color: #adbde7;
+  -webkit-text-stroke: 0.5px #6b737b;
   display: table-cell;
   float: left;
   width: 8px;
