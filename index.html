@@ -290,9 +290,9 @@
           </div>
         </div>
       </div>
-      
-      
-      
+
+
+
       <!-- special stats -->
       <div id="tstatTitle" onclick="displayTstat()"><i id = "tstatTog"class="fas fa-angle-double-down" style="color:#3355D9;"></i>특성 스테이터스</div>
       <div id = "tstat">
@@ -355,12 +355,14 @@
             </div>
             <div class="rowTable">
               <div class="mainstats">
+                <div id="splblock">
                 <div class="statName">Spl</div>
                 <div class="stats"><div onkeypress="return (this.innerText.length < 3)" id="SPL" contenteditable="true">0</div></div>
                 <div class="statBonus"><div id="SPLBonus">0</div></div>
                 <div class="statIncrement" onclick="incSPL()"><i class="fas fa-caret-right"></i></div>
                 <div class="statsAdd"><div id="SPLAdd">1</div></div>
               </div>
+            </div>
               <div class="substats">
                 <div class="substatName">C.Rate</div>
                 <div class="substat"><div id="CRATE">0</div></div>
@@ -403,7 +405,7 @@
             </div>
           </div><!-- end of .tstatTable -->
         </div><!-- end of .tstat -->
-        
+
       </div> <!-- end of <table> -->
   
 </div> <!--end of main -->
