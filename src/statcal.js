@@ -5,28 +5,15 @@ var stra = 2, agia = 2, vita = 2, inta = 2, dexa = 2, luka = 2;
 var pow = 0, sta = 0, wis = 0, spl = 0, con = 0, crt = 0;
 var powa = 0, staa = 0, wisa = 0, spla = 0, cona = 0, crta = 0;
 
-
-var strb = 0;
-var agib = 0;
-var vitb = 0;
-var intb = 0;
-var dexb = 0;
-var lukb = 0;
-
-var powb = 0;
-var stab = 0;
-var wisb = 0;
-var splb = 0;
-var conb = 0;
-var crtb = 0;
-
+var strb = 0; agib = 0; vitb = 0; intb = 0; dexb = 0; lukb = 0;
+var powb = 0; stab = 0; wisb = 0; splb = 0; conb = 0; crtb = 0;
 
 var strcost = 0; agicost = 0; vitcost = 0; intcost = 0; dexcost = 0; lukcost = 0;
-var powcost = 0; stacost = 0; wiscost = 0; splcost = 0; concost = 0; crtcost = 0; tstatcost = 0;
+var powcost = 0; stacost = 0; wiscost = 0; splcost = 0; concost = 0; crtcost = 0; tstatcost = 7;
 
 var tstatmax = 100;
 
-var atk = 1; def = 1; matk = 1; mdef = 1; hit = 177; flee = 102; crit = 1;
+var atk = 1; def = 1; matk = 1; mdef = 1; hit = 177; flee = 102; crit = 1; cast = 0;
 var patk = 0; res = 0, smatk = 0; mres = 0; hplus = 0; crate = 0;
 
 function statreset(){
@@ -243,7 +230,28 @@ function incCRT(){
 
 /* stats */
 document.getElementById("STR").addEventListener('keypress', (e) => {
-  if (e.which === 13 || (e.keyCode >= 48 && e.keyCode <= 57)) {
+  if (e.which === 13) {
+    if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+      maxstat = 99;
+    }else{
+      maxstat = 130;
+    }
+    str = parseInt(document.getElementById("STR").innerHTML);
+    var strcost_new = 0;
+    if(str >= maxstat){
+      str = maxstat;
+    }else if(str <= 1){
+      str = 1;
+    }
+    for(var i=0; i< str-1; i++){
+      strcost_new += stat_cost[i];
+      stra = stat_cost[str-1];
+    }
+    if(str === maxstat){
+      stra = 0;
+    }
+    strcost = strcost_new;
+    statdisplay();
     e.preventDefault();
   }
   if (isNaN(String.fromCharCode(e.which))) {
@@ -278,7 +286,28 @@ document.getElementById("strblock").addEventListener('mousewheel',function (e) {
 });
 
 document.getElementById("AGI").addEventListener('keypress', (e) => {
-  if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
+  if (e.which === 13) {
+    if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+      maxstat = 99;
+    }else{
+      maxstat = 130;
+    }
+    agi = parseInt(document.getElementById("AGI").innerHTML);
+    var agicost_new = 0;
+    if(agi >= maxstat){
+      agi = maxstat;
+    }else if(agi <= 1){
+      agi = 1;
+    }
+    for(var i=0; i< agi-1; i++){
+      agicost_new += stat_cost[i];
+      agia = stat_cost[agi-1];
+    }
+    if(agi === maxstat){
+      agia = 0;
+    }
+    agicost = agicost_new;
+    statdisplay();
     e.preventDefault();
   }
   if (isNaN(String.fromCharCode(e.which))) {
@@ -311,7 +340,28 @@ document.getElementById("agiblock").addEventListener('mousewheel',function (e) {
 });
 
 document.getElementById("VIT").addEventListener('keypress', (e) => {
-  if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
+  if (e.which === 13) {
+    if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+      maxstat = 99;
+    }else{
+      maxstat = 130;
+    }
+    vit = parseInt(document.getElementById("VIT").innerHTML);
+    var vitcost_new = 0;
+    if(vit >= maxstat){
+      vit = maxstat;
+    }else if(vit <= 1){
+      vit = 1;
+    }
+    for(var i=0; i< vit-1; i++){
+      vitcost_new += stat_cost[i];
+      vita = stat_cost[vit-1];
+    }
+    if(vit === maxstat){
+      vita = 0;
+    }
+    vitcost = vitcost_new;
+    statdisplay();
     e.preventDefault();
   }
   if (isNaN(String.fromCharCode(e.which))) {
@@ -344,7 +394,28 @@ document.getElementById("vitblock").addEventListener('mousewheel',function (e) {
 });
 
 document.getElementById("INT").addEventListener('keypress', (e) => {
-  if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
+  if (e.which === 13) {
+    if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+      maxstat = 99;
+    }else{
+      maxstat = 130;
+    }
+    int = parseInt(document.getElementById("INT").innerHTML);
+    var intcost_new = 0;
+    if(int >= maxstat){
+      int = maxstat;
+    }else if(int <= 1){
+      int = 1;
+    }
+    for(var i=0; i< int-1; i++){
+      intcost_new += stat_cost[i];
+      inta = stat_cost[int-1];
+    }
+    if(int === maxstat){
+      inta = 0;
+    }
+    intcost = intcost_new;
+    statdisplay();
     e.preventDefault();
   }
   if (isNaN(String.fromCharCode(e.which))) {
@@ -377,7 +448,28 @@ document.getElementById("intblock").addEventListener('mousewheel',function (e) {
 });
 
 document.getElementById("DEX").addEventListener('keypress', (e) => {
-  if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
+  if (e.which === 13) {
+    if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+      maxstat = 99;
+    }else{
+      maxstat = 130;
+    }
+    dex = parseInt(document.getElementById("DEX").innerHTML);
+    var dexcost_new = 0;
+    if(dex >= maxstat){
+      dex = maxstat;
+    }else if(dex <= 1){
+      dex = 1;
+    }
+    for(var i=0; i< dex-1; i++){
+      dexcost_new += stat_cost[i];
+      dexa = stat_cost[dex-1];
+    }
+    if(dex === maxstat){
+      dexa = 0;
+    }
+    dexcost = dexcost_new;
+    statdisplay();
     e.preventDefault();
   }
   if (isNaN(String.fromCharCode(e.which))) {
@@ -410,7 +502,28 @@ document.getElementById("dexblock").addEventListener('mousewheel',function (e) {
 });
 
 document.getElementById("LUK").addEventListener('keypress', (e) => {
-  if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
+  if (e.which === 13) {
+    if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+      maxstat = 99;
+    }else{
+      maxstat = 130;
+    }
+    luk = parseInt(document.getElementById("LUK").innerHTML);
+    var lukcost_new = 0;
+    if(luk >= maxstat){
+      luk = maxstat;
+    }else if(luk <= 1){
+      luk = 1;
+    }
+    for(var i=0; i< luk-1; i++){
+      lukcost_new += stat_cost[i];
+      luka = stat_cost[luk-1];
+    }
+    if(luk === maxstat){
+      luka = 0;
+    }
+    lukcost = lukcost_new;
+    statdisplay();
     e.preventDefault();
   }
   if (isNaN(String.fromCharCode(e.which))) {
@@ -756,7 +869,6 @@ function tstatAdj(){
   }
 }
 
-
 function statcal(){
   /* stat cal */
   // ATK = floor[(BaseLevel ÷ 4) + Str + (Dex ÷ 5) + (Luk ÷ 3)] + ((POW+POWBonus) * 5)
@@ -773,9 +885,8 @@ function statcal(){
   crit = (luk + lukb)*0.3
   //flee = 100 + BaseLv + AGI + Floor(LUK ÷ 5) + Bonus
   flee = 100 + parseInt(baseLV.value) + (agi+agib) + Math.floor((luk + lukb)/5)+ (con+conb)*2;
-  
-    //cast = ((int+intb)/2 + (dex+dexb))/265 * 100
-  cast = (((int+intb)/2 + (dex+dexb))/265)*100
+  //cast = ((int+intb)/2 + (dex+dexb))/265 * 100
+  cast = (((int+intb)/2 + (dex+dexb))/265)*100;
 
   document.getElementById("ATK").innerHTML = atk;
   document.getElementById("DEF").innerHTML = def;
@@ -787,7 +898,6 @@ function statcal(){
   document.getElementById("CAST").innerHTML = cast.toFixed(2);
 
   /* tstat cal */
-  // patk = pow/3 +
   patk = Math.floor((pow + powb)/3) +  + Math.floor((con + conb)/5);
   res = (sta+stab) + Math.floor(parseInt(sta+stab)/3)*5;
   smatk = Math.floor((spl + splb)/3) + Math.floor((con + conb)/5);
