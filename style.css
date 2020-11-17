@@ -12,6 +12,7 @@ body{
 
 
 #sidebar{
+  text-align: center;
   width:160px;
   float: left;
   height: 600px;
