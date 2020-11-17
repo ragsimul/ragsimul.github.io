@@ -19,7 +19,7 @@ classImgNum = [c000, c001, c002, c009, c110, c121, c122, c123, c124,c131,c132,c1
               c810, c831,
               c910, c931];
 
-noviceClasses = ['Novice'];
+noviceClasses = ['Novice', 'Emperium'];
 noviceEXClasses = ['Super Novice'];
 firstClasses = ['Swordman', 'Magician','Merchant','Acolyte', 'Theif', 'Archer', 'Taekwon Kid'];
 firstEXClasses = ['Ninja','Gunslinger'];
@@ -28,7 +28,7 @@ secondtrClasses = ['Lord Knight','Paladin','High Wizard','Professor', 'Whitesmit
 thirdClasses = ['Rune Knight', 'Royal Guard','Warlock', 'Sorcerer', 'Mechanic', 'Genetic', 'Arch Bishop', 'Sura', 'Guillotine Cross', 'Shadow Chaser',  'Ranger', 'Minstrel'];
 thirdEXClasses = ['Super Novice EX', 'Star Emperer', 'Soul Reaper','Kagerou', 'Rebelion']
 fourthClasses = ['Dragon Knight', 'Imperial Guard', 'Arch Mage', 'Elemental Master','Meister', 'Biolo','Cardinal', 'Inquisiter','Shadow Cross', 'Abyss Chaser','Wind Hawk', 'Troubadour'];
-
+doramClasses = ['Summoner']
 classNameEN = ['Novice', 'Super Novice', 'Super Novice EX', 'Emperium',
             'Swordman', 'Knight', 'Crusader', 'Lord Knight', 'Paladin', 'Rune Knight', 'Royal Guard', 'Dragon Knight', 'Imperial Guard',
           'Magician', 'Wizard', 'Sage', 'High Wizard', 'Professor', 'Warlock', 'Sorcerer', 'Arch Mage', 'Elemental Master',
