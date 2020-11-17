@@ -557,10 +557,33 @@ document.getElementById("lukblock").addEventListener('mousewheel',function (e) {
 
 /* tstats */
 document.getElementById("POW").addEventListener('keypress', (e) => {
-  if (e.which === 13 || (e.keyCode >= 48 && e.keyCode <= 57)) {
+  if (e.which === 13) {
+    if (fourthClasses.includes(className.innerHTML)){
+    pow = parseInt(document.getElementById("POW").innerHTML);
+    var powcost_new = 0;
+    if(pow >= tstatmax){
+      pow = tstatmax;
+    }else if(pow <= 0){
+      pow = 0;
+    }
+    for(var i=0; i< pow; i++){
+      powcost_new += tstat_cost[i];
+      powa = tstat_cost[pow-1];
+    }
+    if(pow === tstatmax){
+      powa = 0;
+    }
+    powcost = powcost_new;
+
     e.preventDefault();
-  }
-  if (isNaN(powing.fromCharCode(e.which))) {
+  }else{
+    pow = 0;
+    powa = 0;
+    powb = 0;
+    e.preventDefault();
+  }statdisplay();
+}
+  if (isNaN(String.fromCharCode(e.which))) {
     e.preventDefault();
   }
 });
@@ -589,13 +612,35 @@ document.getElementById("powblock").addEventListener('mousewheel',function (e) {
 });
 
 document.getElementById("STA").addEventListener('keypress', (e) => {
-  if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
-    e.preventDefault();
-  }
-  if (isNaN(powing.fromCharCode(e.which))) {
-    e.preventDefault();
-  }
+  if (e.which === 13) {
+    if (fourthClasses.includes(className.innerHTML)){
+    sta = parseInt(document.getElementById("STA").innerHTML);
+    var stacost_new = 0;
+    if(sta >= tstatmax){
+      sta = tstatmax;
+    }else if(sta <= 0){
+      sta = 0;
+    }
+    for(var i=0; i< sta; i++){
+      stacost_new += tstat_cost[i];
+      staa = tstat_cost[sta-1];
+    }
+    if(sta === tstatmax){
+      staa = 0;
+    }
+    stacost = stacost_new;
 
+    e.preventDefault();
+  }else{
+    sta = 0;
+    staa = 0;
+    stab = 0;
+    e.preventDefault();
+  }statdisplay();
+}
+  if (isNaN(String.fromCharCode(e.which))) {
+    e.preventDefault();
+  }
 });
 document.getElementById("stablock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
@@ -623,13 +668,35 @@ document.getElementById("stablock").addEventListener('mousewheel',function (e) {
 });
 
 document.getElementById("WIS").addEventListener('keypress', (e) => {
-  if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
-    e.preventDefault();
-  }
-  if (isNaN(powing.fromCharCode(e.which))) {
-    e.preventDefault();
-  }
+  if (e.which === 13) {
+    if (fourthClasses.includes(className.innerHTML)){
+    wis = parseInt(document.getElementById("WIS").innerHTML);
+    var wiscost_new = 0;
+    if(wis >= tstatmax){
+      wis = tstatmax;
+    }else if(wis <= 0){
+      wis = 0;
+    }
+    for(var i=0; i< wis; i++){
+      wiscost_new += tstat_cost[i];
+      wisa = tstat_cost[wis-1];
+    }
+    if(wis === tstatmax){
+      wisa = 0;
+    }
+    wiscost = wiscost_new;
 
+    e.preventDefault();
+  }else{
+    wis = 0;
+    wisa = 0;
+    wisb = 0;
+    e.preventDefault();
+  }statdisplay();
+}
+  if (isNaN(String.fromCharCode(e.which))) {
+    e.preventDefault();
+  }
 });
 document.getElementById("wisblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
@@ -656,13 +723,35 @@ document.getElementById("wisblock").addEventListener('mousewheel',function (e) {
 });
 
 document.getElementById("SPL").addEventListener('keypress', (e) => {
-  if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
-    e.preventDefault();
-  }
-  if (isNaN(powing.fromCharCode(e.which))) {
-    e.preventDefault();
-  }
+  if (e.which === 13) {
+    if (fourthClasses.includes(className.innerHTML)){
+    spl = parseInt(document.getElementById("SPL").innerHTML);
+    var splcost_new = 0;
+    if(spl >= tstatmax){
+      spl = tstatmax;
+    }else if(spl <= 0){
+      spl = 0;
+    }
+    for(var i=0; i< spl; i++){
+      splcost_new += tstat_cost[i];
+      spla = tstat_cost[spl-1];
+    }
+    if(spl === tstatmax){
+      spla = 0;
+    }
+    splcost = splcost_new;
 
+    e.preventDefault();
+  }else{
+    spl = 0;
+    spla = 0;
+    splb = 0;
+    e.preventDefault();
+  }statdisplay();
+}
+  if (isNaN(String.fromCharCode(e.which))) {
+    e.preventDefault();
+  }
 });
 document.getElementById("splblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
@@ -689,13 +778,35 @@ document.getElementById("splblock").addEventListener('mousewheel',function (e) {
 });
 
 document.getElementById("CON").addEventListener('keypress', (e) => {
-  if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
-    e.preventDefault();
-  }
-  if (isNaN(powing.fromCharCode(e.which))) {
-    e.preventDefault();
-  }
+  if (e.which === 13) {
+    if (fourthClasses.includes(className.innerHTML)){
+    con = parseInt(document.getElementById("CON").innerHTML);
+    var concost_new = 0;
+    if(con >= tstatmax){
+      con = tstatmax;
+    }else if(con <= 0){
+      con = 0;
+    }
+    for(var i=0; i< con; i++){
+      concost_new += tstat_cost[i];
+      cona = tstat_cost[con-1];
+    }
+    if(con === tstatmax){
+      cona = 0;
+    }
+    concost = concost_new;
 
+    e.preventDefault();
+  }else{
+    con = 0;
+    cona = 0;
+    conb = 0;
+    e.preventDefault();
+  }statdisplay();
+}
+  if (isNaN(String.fromCharCode(e.which))) {
+    e.preventDefault();
+  }
 });
 document.getElementById("conblock").addEventListener('mousewheel',function (e) {
   e.preventDefault();
@@ -722,10 +833,33 @@ document.getElementById("conblock").addEventListener('mousewheel',function (e) {
 });
 
 document.getElementById("CRT").addEventListener('keypress', (e) => {
-  if (e.which === 13|| (e.keyCode >= 48 && e.keyCode <= 57)) {
+  if (e.which === 13) {
+    if (fourthClasses.includes(className.innerHTML)){
+    crt = parseInt(document.getElementById("CRT").innerHTML);
+    var crtcost_new = 0;
+    if(crt >= tstatmax){
+      crt = tstatmax;
+    }else if(crt <= 0){
+      crt = 0;
+    }
+    for(var i=0; i< crt; i++){
+      crtcost_new += tstat_cost[i];
+      crta = tstat_cost[crt-1];
+    }
+    if(crt === tstatmax){
+      crta = 0;
+    }
+    crtcost = crtcost_new;
+
     e.preventDefault();
-  }
-  if (isNaN(powing.fromCharCode(e.which))) {
+  }else{
+    crt = 0;
+    crta = 0;
+    crtb = 0;
+    e.preventDefault();
+  }statdisplay();
+}
+  if (isNaN(String.fromCharCode(e.which))) {
     e.preventDefault();
   }
 });
@@ -848,7 +982,6 @@ function statdisplay(){
     tstatpoint.innerHTML = remaintcost;
     tstatpoint.style.color = "black";
   }
-
   statcal();
 }
 
