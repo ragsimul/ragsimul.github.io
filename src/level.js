@@ -40,8 +40,28 @@ function statLVAdj(){
 baseLV.addEventListener('keypress', (e) => {
   if (e.which === 13) {
     e.preventDefault();
+    if(noviceClasses.includes(className.innerHTML) || firstClasses.includes(className.innerHTML)||firstEXClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML)){
+      if(baseLV.value >= 99){
+        baseLV.value = 99;
+      }else if(baseLV.value <= 1){
+        baseLV.value = 1;
+      }
+    }else if(thirdClasses.includes(className.innerHTML) || thirdEXClasses.includes(className.innerHTML)){
+      if(baseLV.value >= 200){
+        baseLV.value = 200;
+      }else if(baseLV.value <= 99){
+        baseLV.value = 99;
+      }
+    }else{
+      if(baseLV.value >= 250){
+        baseLV.value = 250;
+      }else if(baseLV.value <= 200){
+        baseLV.value = 200;
+      }
+    }
     baseAdj();
   }
+
 
   if (isNaN(String.fromCharCode(e.which))) {
     e.preventDefault();
