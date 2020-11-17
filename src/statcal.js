@@ -544,7 +544,7 @@ document.getElementById("lukblock").addEventListener('mousewheel',function (e) {
     luka = stat_cost[luk-1];
     lukcost += stat_cost[luk-2];
     if(luk === maxstat){
-      inta = 0;
+      luka = 0;
     }
   }else{
     if(num <= 1) return false;
