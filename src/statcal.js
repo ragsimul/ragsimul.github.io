@@ -777,6 +777,9 @@ function statcal(){
   crit = (luk + lukb)*0.3
   //flee = 100 + BaseLv + AGI + Floor(LUK ÷ 5) + Bonus
   flee = 100 + parseInt(baseLV.value) + (agi+agib) + Math.floor((luk + lukb)/5)+ (con+conb)*2;
+  
+    //cast = ((int+intb)/2 + (dex+dexb))/265 * 100
+  cast = (((int+intb)/2 + (dex+dexb))/265)*100
 
   document.getElementById("ATK").innerHTML = atk;
   document.getElementById("DEF").innerHTML = def;
@@ -785,7 +788,7 @@ function statcal(){
   document.getElementById("HIT").innerHTML = hit;
   document.getElementById("CRIT").innerHTML = Math.ceil(crit);
   document.getElementById("FLEE").innerHTML = flee;
-
+  document.getElementById("CAST").innerHTML = cast.toFixed(2);
 
   /* tstat cal */
   // patk = pow/3 +
