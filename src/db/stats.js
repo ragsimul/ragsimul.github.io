@@ -5277,6 +5277,69 @@ oboro_bonus = [
  [7, 6, 4, 6, 8, 4]
 ];
 
+
+doram_bonus = [[0, 0, 0, 0, 1, 0],
+ [0, 0, 0, 0, 1, 0],
+ [0, 0, 1, 0, 1, 0],
+ [0, 0, 1, 0, 1, 0],
+ [0, 0, 1, 0, 2, 0],
+ [0, 0, 2, 0, 2, 0],
+ [0, 0, 2, 0, 2, 0],
+ [0, 1, 2, 0, 2, 0],
+ [0, 1, 2, 1, 2, 0],
+ [0, 1, 2, 1, 2, 0],
+ [0, 2, 2, 1, 2, 0],
+ [0, 2, 2, 2, 2, 0],
+ [0, 2, 2, 2, 3, 0],
+ [0, 2, 2, 2, 3, 0],
+ [0, 3, 2, 2, 3, 0],
+ [0, 3, 2, 3, 3, 0],
+ [0, 3, 2, 3, 4, 0],
+ [0, 3, 2, 3, 4, 0],
+ [0, 4, 2, 3, 4, 0],
+ [0, 4, 2, 4, 4, 0],
+ [0, 4, 2, 4, 5, 0],
+ [0, 4, 2, 4, 5, 0],
+ [0, 4, 2, 4, 5, 1],
+ [0, 4, 3, 4, 5, 1],
+ [0, 4, 3, 4, 6, 1],
+ [0, 4, 3, 4, 6, 1],
+ [0, 5, 3, 4, 6, 1],
+ [0, 5, 3, 4, 6, 1],
+ [0, 5, 3, 4, 6, 2],
+ [0, 5, 3, 4, 6, 2],
+ [0, 5, 3, 5, 6, 2],
+ [0, 5, 3, 5, 7, 2],
+ [0, 5, 3, 5, 7, 2],
+ [0, 5, 3, 5, 7, 3],
+ [0, 5, 3, 5, 7, 3],
+ [0, 5, 3, 6, 7, 3],
+ [0, 5, 3, 6, 7, 4],
+ [0, 5, 3, 6, 7, 4],
+ [0, 6, 3, 6, 7, 4],
+ [0, 6, 3, 6, 7, 4],
+ [0, 6, 3, 6, 8, 4],
+ [0, 6, 3, 7, 8, 4],
+ [0, 6, 4, 7, 8, 4],
+ [0, 6, 4, 7, 8, 4],
+ [0, 6, 4, 7, 9, 4],
+ [0, 6, 4, 7, 9, 5],
+ [0, 6, 5, 7, 9, 5],
+ [0, 7, 5, 7, 9, 5],
+ [0, 7, 5, 7, 9, 5],
+ [0, 7, 5, 7, 10, 5],
+ [0, 7, 5, 7, 10, 5],
+ [0, 7, 5, 7, 10, 5],
+ [0, 7, 5, 7, 10, 5],
+ [0, 7, 5, 7, 10, 5],
+ [0, 7, 5, 7, 10, 5],
+ [0, 7, 5, 7, 10, 5],
+ [0, 7, 5, 7, 10, 5],
+ [0, 7, 5, 9, 12, 5],
+ [0, 7, 5, 9, 12, 5],
+ [0, 7, 5, 9, 12, 5]
+]
+
 jobBonuses = [novice_bonus, super_novice_bonus, super_novice_ex_bonus, emperium_bonus,
   swordman_bonus, knight_bonus, crusader_bonus, lord_knight_bonus, paladin_bonus, rune_knight_bonus, royal_guard_bonus, dragon_knight_bonus, imperial_guard_bonus,
   magician_bonus, wizard_bonus, sage_bonus, high_wizard_bonus, professor_bonus, warlock_bonus, sorcerer_bonus, arch_mage_bonus, elemental_master_bonus,
@@ -5286,10 +5349,9 @@ jobBonuses = [novice_bonus, super_novice_bonus, super_novice_ex_bonus, emperium_
   archer_bonus, hunter_bonus, bard_bonus, sniper_bonus, clown_bonus, ranger_bonus, minstrel_bonus, wind_hawk_bonus, troubadour_bonus, dancer_bonus, gypsy_bonus, wanderer_bonus, trouvere_bonus,
   taekwon_bonus, taekwon_master_bonus, soul_linker_bonus, star_emperer_bonus, soul_reaper_bonus,
   ninja_bonus, kagerou_bonus, oboro_bonus,
-  gunslinger_bonus, rebelion_bonus]
+  gunslinger_bonus, rebelion_bonus, doram_bonus]
 
 jobtstatBonuses = [
   dragon_knight_tbonus, imperial_guard_tbonus, arch_mage_tbonus, elemental_master_tbonus, meister_tbonus, biolo_tbonus, cardinal_tbonus, inquisiter_tbonus, shadow_cross_tbonus, abyss_chaser_tbonus, wind_hawk_tbonus,
   , troubadour_tbonus, trouvere_tbonus
 ];
-
