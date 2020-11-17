@@ -1,7 +1,7 @@
 /*eslint-env browser*/
 // base level //
 function statLVAdj(){
-  if (noviceClasses.includes(className.innerHTML) || firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML)){
+  if (noviceClasses.includes(className.innerHTML) || firstClasses.includes(className.innerHTML)||firstEXClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML)){
     statcost = stat_none[baseLV.value-1];
     basemax = maxLV_first;
     basemin = 1;
