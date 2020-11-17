@@ -37,7 +37,7 @@ function statreset(){
 
 function incSTR(){
   var num = Number(document.getElementById("STR").innerHTML);
-  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || firstEXClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
     maxstat = 99;
   }else{
     maxstat = 130;
@@ -54,7 +54,7 @@ function incSTR(){
 
 function incAGI(){
   var num = Number(document.getElementById("AGI").innerHTML);
-  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) ||firstEXClasses.includes(className.innerHTML)  || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
     maxstat = 99;
   }else{
     maxstat = 130;
@@ -71,7 +71,7 @@ function incAGI(){
 
 function incVIT(){
   var num = Number(document.getElementById("VIT").innerHTML);
-  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) ||firstEXClasses.includes(className.innerHTML)|| secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
     maxstat = 99;
   }else{
     maxstat = 130;
@@ -88,7 +88,7 @@ function incVIT(){
 
 function incINT(){
   var num = Number(document.getElementById("INT").innerHTML);
-  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) ||firstEXClasses.includes(className.innerHTML)|| secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
     maxstat = 99;
   }else{
     maxstat = 130;
@@ -105,7 +105,7 @@ function incINT(){
 
 function incDEX(){
   var num = Number(document.getElementById("DEX").innerHTML);
-  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) ||firstEXClasses.includes(className.innerHTML)|| secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
     maxstat = 99;
   }else{
     maxstat = 130;
@@ -122,7 +122,7 @@ function incDEX(){
 
 function incLUK(){
   var num = Number(document.getElementById("LUK").innerHTML);
-  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
+  if (noviceClasses.includes(className.innerHTML) ||firstClasses.includes(className.innerHTML) ||firstEXClasses.includes(className.innerHTML)|| secondClasses.includes(className.innerHTML) || secondtrClasses.includes(className.innerHTML)){
     maxstat = 99;
   }else{
     maxstat = 130;
