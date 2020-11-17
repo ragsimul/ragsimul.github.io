@@ -1020,7 +1020,9 @@ function statcal(){
   flee = 100 + parseInt(baseLV.value) + (agi+agib) + Math.floor((luk + lukb)/5)+ (con+conb)*2;
   //cast = ((int+intb)/2 + (dex+dexb))/265 * 100
   cast = (((int+intb)/2 + (dex+dexb))/265)*100;
-
+  if (cast >= 100){
+    cast = 100;
+  }
   document.getElementById("ATK").innerHTML = atk;
   document.getElementById("DEF").innerHTML = def;
   document.getElementById("MATK").innerHTML = matk;
