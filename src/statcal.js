@@ -763,17 +763,13 @@ function statcal(){
   atk = Math.floor(str + strb + (dex + dexb)/5 + (luk + lukb)/3 + (parseInt(baseLV.value)/4)) + (pow + powb)*5;
   // MATK = floor[floor[BaseLevel ÷ 4] + Int + floor[Int ÷ 2] + floor[Dex ÷ 5] + floor[Luk ÷ 3]]
   matk = Math.floor((int + intb) + Math.floor((int + intb)/2)+ Math.floor((dex + dexb)/5) + Math.floor((luk + lukb)/3) + Math.floor(parseInt(baseLV.value)/4) + Math.floor((spl + splb)*5));
-
   //DEF = floor((VIT ÷ 2) + (AGI ÷ 5) + (BaseLv ÷ 2))
   def = Math.floor((parseInt(baseLV.value)/2) + ((vit + vitb)/2) + ((agi + agib)/5));
-
   //MdeF = floor((INT + (VIT ÷ 5) + (DEX ÷ 5) + (BaseLv ÷ 4))
   mdef = Math.floor((int+intb) + ((vit+vitb)/5) + ((dex+dexb)/5) + (parseInt(baseLV.value)/4));
   //hit = 175 + BaseLv + DEX + Floor(LUK ÷ 3) + Bonus
-
   hit = 175 + parseInt(baseLV.value) + (dex + dexb) + Math.floor((luk + lukb)/3) + (con+conb)*2;
   //crit = LUK × 0.3 + Bonus
-
   crit = (luk + lukb)*0.3
   //flee = 100 + BaseLv + AGI + Floor(LUK ÷ 5) + Bonus
   flee = 100 + parseInt(baseLV.value) + (agi+agib) + Math.floor((luk + lukb)/5)+ (con+conb)*2;
@@ -792,11 +788,10 @@ function statcal(){
 
   /* tstat cal */
   // patk = pow/3 +
-
   patk = Math.floor((pow + powb)/3) +  + Math.floor((con + conb)/5);
-  res = (sta+stab);
+  res = (sta+stab) + Math.floor(parseInt(sta+stab)/3)*5;
   smatk = Math.floor((spl + splb)/3) + Math.floor((con + conb)/5);
-  mres = (wis+wisb);
+  mres = (wis+wisb) + Math.floor(parseInt(wis+wisb)/3)*5;;
   hplus = (crt+crtb);
   crate = Math.floor((crt+crtb)/3);
   document.getElementById("PATK").innerHTML = patk;
