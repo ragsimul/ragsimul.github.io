@@ -1,5 +1,6 @@
 /*eslint-env browser*/
 // base level //
+var basemax = 99;
 function statLVAdj(){
   if (noviceClasses.includes(className.innerHTML) || firstClasses.includes(className.innerHTML)||firstEXClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML)){
     statcost = stat_none[baseLV.value-1];
@@ -26,6 +27,10 @@ function statLVAdj(){
     tstatcost = tstat_obtain[baseLV.value-200];
     basemax = maxLV_fourth;
     basemin = maxLV_third;
+  }else if(doramClasses.includes(className.innerHTML)){
+    statcost = stat_none[baseLV.value-1];
+    basemax = 200;
+    basemin = 1;
   }
   else{
     statcost = stat_none[baseLV.value-1];
@@ -43,6 +48,12 @@ baseLV.addEventListener('keypress', (e) => {
     if(noviceClasses.includes(className.innerHTML) || firstClasses.includes(className.innerHTML)||firstEXClasses.includes(className.innerHTML) || secondClasses.includes(className.innerHTML)){
       if(baseLV.value >= 99){
         baseLV.value = 99;
+      }else if(baseLV.value <= 1){
+        baseLV.value = 1;
+      }
+    }else if(doramClasses.includes(className.innerHTML)){
+      if(baseLV.value >= 200){
+        baseLV.value = 200;
       }else if(baseLV.value <= 1){
         baseLV.value = 1;
       }
@@ -100,6 +111,9 @@ function jobLVAdj(){
     jobmin = 1;
   }else if(fourthClasses.includes(className.innerHTML)){
     jobmax = 50;
+    jobmin = 1;
+  }else if(doramClasses.includes(className.innerHTML)){
+    jobmax = 60;
     jobmin = 1;
   }else{
     statcost = stat_none[baseLV.value-1];
