@@ -14,8 +14,7 @@ body{
 #sidebar{
   text-align: center;
   width:160px;
-  float: left;
-  height: 600px;
+  position:fixed;
 }
 
 ul{
@@ -77,10 +76,11 @@ ul:hover li{
 }
 
 #main{
-  margin-top: 20px;
+  margin-left: 160px;
   max-width: 1200px;
   float: left;
 }
+
 
 #baseLV{
   width: 30px;
