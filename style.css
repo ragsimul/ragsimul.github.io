@@ -14,7 +14,7 @@ body{
 #sidebar{
   text-align: center;
   width:160px;
-  position:fixed;
+  position:absolute;
 }
 
 ul{
