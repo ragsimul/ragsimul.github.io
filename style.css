@@ -512,10 +512,8 @@ ul:hover li{
 
 
 #classtree{
-  border: none;
-  width: 620px;
-  height: auto;
-  margin: -8px;
+  float:left;
+  height: 100%;
 }
 
 
