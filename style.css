@@ -2,15 +2,13 @@ body{
   font-family: 'Arial', 'Dotum';
   font-size: 12px;
   height: 100%;
-
 }
 
 ::selection {
   background-color: rgba(124, 156, 225, 0.4) /* WebKit/Blink Browsers */
 }
 
-
-
+/* Sidebar */
 #sidebar{
   text-align: center;
   width:160px;
@@ -19,7 +17,6 @@ body{
 
 ul{
   width: 90px;
-
 }
 
 ul img{
@@ -33,7 +30,6 @@ ul img{
 .jobcontainer{
   position: relative;
   text-align: right;
-
 }
 
 .jobname{
@@ -45,6 +41,7 @@ ul img{
   line-height: 12px;
   -webkit-text-stroke: 0.3px white;
 }
+
 .jobnamet{
   position:absolute;
   font-size: 14px;
@@ -54,7 +51,6 @@ ul img{
   -webkit-text-stroke: 0.3px white;
   line-height: 14px;
 }
-
 
 li{
   display:none;
@@ -70,16 +66,17 @@ li img{
   object-fit: cover;
   border-left: 4px solid #c0c0c0;
 }
+
 ul:hover li{
   display: block;
-
 }
+
+/* Main Article */
 
 #main{
   margin-left: 160px;
   max-width: 1200px;
   float: left;
-
 }
 
 
@@ -89,8 +86,8 @@ ul:hover li{
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: groove;
-
 }
+
 #table {
   width: 440px;
   clear: both;
@@ -98,13 +95,12 @@ ul:hover li{
   margin-bottom: 10px;
   margin-right: 10px;
 }
+
 .rowTable {
   display: table-row;
 }
 
-
 /* Character Data */
-
 
 #charlist{
   position: fixed;
@@ -132,42 +128,6 @@ ul:hover li{
   left: 50%;
 }
 
-
-#nv, #sw, #ma, #me, #ac, #th, #ar, #ta, #ni, #gu {
-  position: fixed;
-  margin: auto;
-  z-index : 1;
-  left: 120px;
-  top: 220px;
-  display: none;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding-top: 20px;
-}
-
-#ma{
-  left: 202px;
-}
-#me{
-  left: 285px;
-}
-#ac{
-  left: 370px;
-}
-#th{
-  left: 455px;
-}
-#ar{
-  left: 540px;
-}
-#ta {
-  left: 705px;
-}
-#ni, #gu{
-  left: 785px;
-}
-
 .classChar{
   float: left;
 }
@@ -191,6 +151,7 @@ ul:hover li{
   float:right;
   width: 290px;
 }
+
 .tableTitle {
   background: linear-gradient(0deg, rgba(179,193,221,1) 0%, rgba(153,174,217,1) 54%, rgba(197,222,243,1) 100%);
   margin-bottom: -1px;
@@ -199,24 +160,22 @@ ul:hover li{
   text-shadow: 1px 1px #eee;
   border-radius: 5px 5px 0 0;
   clear: both;
-
 }
+
 #charName {
   background: transparent;
   border: 0px solid #c0c0c0;
 }
+
 #charName:focus{
   outline: none;
 }
-
-
 
 .charData {
   border-style: solid;
   border-width: 1px 1px 0px 1px;
   border-color: #c0c0c0;
   height: 100%;
-
 }
 
 .healingTable {
@@ -227,7 +186,6 @@ ul:hover li{
   border-radius : 0 0 5px 5px;
 }
 
-
 .baseLV, #className, .jobLV {
   display: table-cell;
 }
@@ -235,6 +193,7 @@ ul:hover li{
 .baseLV{
   padding-left: 20px;
 }
+
 .jobLV{
   padding-left: 10px;
 }
@@ -247,7 +206,6 @@ ul:hover li{
 
 #HP, #SP{
   display: inline-block;
-
 }
 
 #className{
@@ -258,15 +216,14 @@ ul:hover li{
 #baseLV, #jobLV{
   width: 30px;
   border: hidden;
-
 }
+
 #baseLV:focus, #jobLV:focus{
   outline:none;
 }
 
-
-
 /* quick slot */
+
 .skills {
   border: 1px solid #c0c0c0;
   border-radius : 3px;
@@ -274,6 +231,7 @@ ul:hover li{
   background:linear-gradient(0deg, #f7f7f7 12.5%, #fff 12.5%, #fff 37.5%, #f7f7f7 37.5%, #f7f7f7 62.5%, #fff 62.5%, #fff 87.5%, #f7f7f7 87.5%);
   background-size: 1px 8px;
 }
+
 .quickslot {
   display: table;
   float: right;
@@ -315,9 +273,7 @@ ul:hover li{
   height: 20px;
   width: 100%;
   border: 1px solid #c0c0c0;
-
 }
-
 
 /* Main Stat Window */
 
@@ -326,6 +282,7 @@ ul:hover li{
     font-family: 'Arial';
   display: table-cell;
 }
+
 .statName, .substatName{
   display: table-cell;
   font-family: 'Arial';
@@ -354,10 +311,10 @@ ul:hover li{
   border-right: 0px solid #c0c0c0;
   max-height: 15px;
 }
+
 #STR:focus, #AGI:focus, #VIT:focus, #INT:focus, #DEX:focus, #LUK:focus{
   outline: none;
 }
-
 
 .statBonus{
   width: 30px;
@@ -372,7 +329,6 @@ ul:hover li{
   content: "+"
 }
 
-
 .statIncrement {
   color: #adbde7;
   -webkit-text-stroke: 0.5px #6b737b;
@@ -385,7 +341,6 @@ ul:hover li{
   background-color: #f2f2f2;
   border: 2px solid #c0c0c0;
 }
-
 
 .statsAdd {
   display: table-cell;
@@ -404,18 +359,18 @@ ul:hover li{
   display: table-cell;
   border-bottom: 1px solid #c0c0c0;
   width: 30%;
-
 }
 
 .substatsblank {
   display: table-cell;
   border-bottom: 0px solid #c0c0c0;
   width: 30%;
-
 }
+
 .substatName{
   float: left;
 }
+
 .substat {
   display: table-cell;
   text-align: right;
@@ -423,13 +378,11 @@ ul:hover li{
   padding-top: 2px;
 }
 
-
-
-
 #ATK, #ATKADD, #MATK, #MATKADD, #DEF, #DEFADD, #MDEF, #MDEFADD, #HIT, #FLEE, #FLEEADD, #CRIT, #ASPD,#CAST, #StatPoint{
   display: inline;
   padding-right: 5px;
 }
+
 #CAST:after{
   content: "%"
 }
@@ -443,18 +396,15 @@ ul:hover li{
   pointer-events: none;
 }
 
-
 #Guild {
   text-align: right;
   width: 120px;
   border: 0px solid #000000;
-
 }
 
 #Guild:focus{
   overflow: none;
 }
-
 
 /* special stat table*/
 
@@ -468,11 +418,11 @@ ul:hover li{
   background-size: 1px 10px;
   padding: 3px;
 }
+
 #tstatTitle:hover{
   font-weight: 600;
   color: #3355D9;
 }
-
 
 #tstat{
   display: none;
@@ -495,10 +445,10 @@ ul:hover li{
   border-right: 0px solid #c0c0c0;
   max-height: 15px;
 }
+
 #POW:focus, #STA:focus, #WIS:focus, #SPL:focus, #CON:focus, #CRT:focus{
   outline: none;
 }
-
 
 #POWBonus:before, #STABonus:before, #WISBonus:before, #SPLBonus:before, #CONBonus:before, #CRTBonus:before{
   content: "+"
@@ -508,9 +458,6 @@ ul:hover li{
   display: inline;
   padding-right: 5px;
 }
-
-
-
 
 #classtree{
   float:left;
@@ -523,12 +470,12 @@ ul:hover li{
   font-family: 'Arial', 'Dotum';
   font-size: 10px;
 }
+
 ::selection {
   background-color: rgba(124, 156, 225, 0.4) /* WebKit/Blink Browsers */
 }
 
 .skilltitle{
-
   font-family: 'Arial', 'Dotum';
   font-size: 8px;
   display: table;
@@ -544,6 +491,7 @@ ul:hover li{
   background:linear-gradient(0deg, #f7f7f7 12.5%, #fff 12.5%, #fff 37.5%, #f7f7f7 37.5%, #f7f7f7 62.5%, #fff 62.5%, #fff 87.5%, #f7f7f7 87.5%);
   background-size: 1px 8px;
 }
+
 .skillpoints{
   display: table;
   text-align: left;
@@ -558,17 +506,16 @@ ul:hover li{
   background:linear-gradient(0deg, #f7f7f7 12.5%, #fff 12.5%, #fff 37.5%, #f7f7f7 37.5%, #f7f7f7 62.5%, #fff 62.5%, #fff 87.5%, #f7f7f7 87.5%);
   background-size: 1px 8px;
 }
+
 .skilltree {
   display: table;
   width: 100%;
   height:350px;
-padding: 0 5% 0 5%;
+  padding: 0 5% 0 5%;
   border-style:double;
   border-color: #c0c0c0;
 }
-d
-.skillrow{
-}
+
 .skillinfo{
   display: table-cell;
   width: 80px;
@@ -606,9 +553,6 @@ d
 #skillpoints{
   display: inline;
 }
-
-
-
 
 #footer{
   position: fixed;
