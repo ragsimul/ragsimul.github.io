@@ -515,6 +515,7 @@ ul:hover li{
 #classtree{
   float:left;
   height: 100%;
+  margin-bottom: 60px;
 }
 
 .skillset{
