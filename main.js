@@ -41,7 +41,7 @@ function changeClass(mainchar) {
   for(var i=0; i< classImgNum.length; i++){
     if (mainchar === classImgNum[i]){
       className.innerHTML = classNameEN[i];
-      /*document.getElementById("classtree").data = classSkilltree[i];*/
+      document.getElementById("classtree").dataset.skillsrc = classSkilltree[i];
       if(fourthClasses.includes(className.innerHTML)){
         baseLV.value = maxLV_third;
         jobLV.value = '1';
@@ -84,118 +84,6 @@ function changeClass(mainchar) {
     }
   }
 }
-
-
-
-
-function classClick() {
-  char.style.display = "block";
-}
-
-function nvOver() {
-  if (char.style.display ==="block"){
-    nv.style.display = "block";
-  }else{
-    char.style.display = "none";
-  }
-}
-function nvOut() {
-  nv.style.display = "none";
-}
-function swOver() {
-  if (char.style.display ==="block"){
-    sw.style.display = "block";
-  }else{
-    char.style.display = "none";
-  }
-}
-function swOut() {
-  sw.style.display = "none";
-}
-function maOver() {
-  if (char.style.display ==="block"){
-    ma.style.display = "block";
-  }else{
-    char.style.display = "none";
-  }
-}
-function maOut() {
-  ma.style.display = "none";
-}
-
-function meOver() {
-  if (char.style.display ==="block"){
-    me.style.display = "block";
-  }else{
-    char.style.display = "none";
-  }
-}
-function meOut() {
-  me.style.display = "none";
-}
-
-function acOver() {
-  if (char.style.display ==="block"){
-    ac.style.display = "block";
-  }else{
-    char.style.display = "none";
-  }
-}
-function acOut() {
-  ac.style.display = "none";
-}
-function thOver() {
-  if (char.style.display ==="block"){
-    th.style.display = "block";
-  }else{
-    char.style.display = "none";
-  }
-}
-function thOut() {
-  th.style.display = "none";
-}
-function arOver() {
-  if (char.style.display ==="block"){
-    ar.style.display = "block";
-  }else{
-    char.style.display = "none";
-  }
-}
-function arOut() {
-  ar.style.display = "none";
-}
-function taOver() {
-  if (char.style.display ==="block"){
-    ta.style.display = "block";
-  }else{
-    char.style.display = "none";
-  }
-}
-function taOut() {
-  ta.style.display = "none";
-}
-function niOver() {
-  if (char.style.display ==="block"){
-    ni.style.display = "block";
-  }else{
-    char.style.display = "none";
-  }
-}
-function niOut() {
-  ni.style.display = "none";
-}
-
-function guOver() {
-  if (char.style.display ==="block"){
-    gu.style.display = "block";
-  }else{
-    char.style.display = "none";
-  }
-}
-function guOut() {
-  gu.style.display = "none";
-}
-
 
 
 function displayTstat() {
