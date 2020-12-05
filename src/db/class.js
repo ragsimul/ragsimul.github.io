@@ -46,7 +46,7 @@ classSkilltree = ['skills/000.html', 'skills/001.html', 'skills/002.html', 'skil
               'skills/310.html', 'skills/321.html', 'skills/322.html', 'skills/323.html', 'skills/324.html','skills/331.html','skills/332.html','skills/341.html','skills/342.html',
               'skills/410.html', 'skills/421.html', 'skills/422.html', 'skills/423.html', 'skills/424.html','skills/431.html','skills/432.html','skills/441.html','skills/442.html',
               'skills/510.html', 'skills/521.html', 'skills/522.html', 'skills/523.html', 'skills/524.html','skills/531.html','skills/532.html','skills/541.html','skills/542.html',
-              'skills/610.html', 'skills/621.html', 'skills/622.html', 'skills/623.html', 'skills/624.html','skills/631.html','skills/632.html','skills/641.html','skills/642.html',, 'skills/622.html', 'skills/624.html', 'skills/632.html', 'skills/642.html',
+              'skills/610.html', 'skills/621.html', 'skills/622.html', 'skills/622.html', 'skills/623.html', 'skills/624.html', 'skills/624.html', 'skills/631.html','skills/632.html',  'skills/632.html', 'skills/641.html','skills/642.html', 'skills/642.html',
               'skills/710.html', 'skills/721.html', 'skills/722.html', 'skills/731.html', 'skills/732.html',
               'skills/810.html', 'skills/831.html', 'skills/831.html',
               'skills/910.html', 'skills/931.html',
