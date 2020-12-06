@@ -131,11 +131,11 @@ function includeHTML(callback) {
             elmnt.innerHTML = this.responseText;
           }
           if (this.status == 404) {
-            elmnt.innerHTML = "Page not found.";
+            elmnt.innerHTML = "아직 업데이트 되지 않았습니다!";
           }
           /*remove the attribute, and call this function once more:*/
           elmnt.removeAttribute("include-html");
-          includeHTML(callback);
+          includeHTML();
         }
       };
       xhr.open("GET", file, true);
