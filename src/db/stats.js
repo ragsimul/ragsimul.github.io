@@ -5346,7 +5346,7 @@ jobBonuses = [novice_bonus, super_novice_bonus, super_novice_ex_bonus, emperium_
   merchant_bonus, blacksmith_bonus, alchemist_bonus, whitesmith_bonus, creator_bonus, mechanic_bonus, genetic_bonus, meister_bonus, biolo_bonus,
   acolyte_bonus, priest_bonus, monk_bonus, high_priest_bonus, champion_bonus, arch_bishop_bonus, sura_bonus, cardinal_bonus, inquisiter_bonus,
   theif_bonus, assassin_bonus, rogue_bonus, assassin_cross_bonus, stalker_bonus, guillotine_cross_bonus, shadow_chaser_bonus, shadow_cross_bonus, abyss_chaser_bonus,
-  archer_bonus, hunter_bonus, bard_bonus, sniper_bonus, clown_bonus, ranger_bonus, minstrel_bonus, wind_hawk_bonus, troubadour_bonus, dancer_bonus, gypsy_bonus, wanderer_bonus, trouvere_bonus,
+  archer_bonus, hunter_bonus, bard_bonus, dancer_bonus, sniper_bonus, clown_bonus, gypsy_bonus, ranger_bonus, minstrel_bonus, wanderer_bonus, wind_hawk_bonus, troubadour_bonus, trouvere_bonus,
   taekwon_bonus, taekwon_master_bonus, soul_linker_bonus, star_emperer_bonus, soul_reaper_bonus,
   ninja_bonus, kagerou_bonus, oboro_bonus,
   gunslinger_bonus, rebelion_bonus, doram_bonus]
