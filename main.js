@@ -136,6 +136,7 @@ function includeHTML(callback) {
           /*remove the attribute, and call this function once more:*/
           /*elmnt.removeAttribute("data-skillsrc");*/
           includeHTML();
+          break;
         }
       };
       xhr.open("GET", file, true);
