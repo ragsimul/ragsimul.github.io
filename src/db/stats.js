@@ -5352,6 +5352,5 @@ jobBonuses = [novice_bonus, super_novice_bonus, super_novice_ex_bonus, emperium_
   gunslinger_bonus, rebelion_bonus, doram_bonus]
 
 jobtstatBonuses = [
-  dragon_knight_tbonus, imperial_guard_tbonus, arch_mage_tbonus, elemental_master_tbonus, meister_tbonus, biolo_tbonus, cardinal_tbonus, inquisiter_tbonus, shadow_cross_tbonus, abyss_chaser_tbonus, wind_hawk_tbonus,
-  , troubadour_tbonus, trouvere_tbonus
+  dragon_knight_tbonus, imperial_guard_tbonus, arch_mage_tbonus, elemental_master_tbonus, meister_tbonus, biolo_tbonus, cardinal_tbonus, inquisiter_tbonus, shadow_cross_tbonus, abyss_chaser_tbonus, wind_hawk_tbonus, troubadour_tbonus, trouvere_tbonus
 ];
