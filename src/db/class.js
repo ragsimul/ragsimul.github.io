@@ -37,7 +37,7 @@ classNameEN = ['Novice', 'Super Novice', 'Super Novice EX', 'Emperium',
           'Merchant', 'Blacksmith', 'Alchemist', 'Whitesmith', 'Creator', 'Mechanic', 'Genetic', 'Meister', 'Biolo',
           'Acolyte', 'Priest', 'Monk', 'High Priest', 'Champion', 'Arch Bishop', 'Sura', 'Cardinal', 'Inquisiter',
           'Theif', 'Assassin', 'Rogue', 'Assassin Cross', 'Stalker', 'Guillotine Cross', 'Shadow Chaser', 'Shadow Cross', 'Abyss Chaser',
-          'Archer', 'Hunter', 'Bard', 'Sniper', 'Clown', 'Ranger', 'Minstrel', 'Wind Hawk', 'Troubadour', 'Dancer', 'Gypsy', 'Wanderer', 'Trouvere',
+          'Archer', 'Hunter', 'Bard', 'Dancer', 'Sniper', 'Clown', 'Gypsy', 'Ranger', 'Minstrel', 'Wanderer',  'Wind Hawk', 'Troubadour', 'Trouvere',
           'Taekwon Kid', 'Taekwon Master', 'Soul Linker', 'Star Emperer', 'Soul Reaper',
           'Ninja', 'Kagerou', 'Oboro',
           'Gunslinger', 'Rebelion', 'Summoner'];
