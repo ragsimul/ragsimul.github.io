@@ -42,6 +42,7 @@ function changeClass(mainchar) {
     if (mainchar === classImgNum[i]){
       className.innerHTML = classNameEN[i];
       document.getElementById("classtree").dataset.skillsrc = classSkilltree[i];
+      includeHTML();
       if(fourthClasses.includes(className.innerHTML)){
         baseLV.value = maxLV_third;
         jobLV.value = '1';
@@ -134,7 +135,7 @@ function includeHTML(callback) {
             elmnt.innerHTML = "아직 업데이트 되지 않았습니다!";
           }
           /*remove the attribute, and call this function once more:*/
-          /*elmnt.removeAttribute("data-skillsrc");*/
+          elmnt.removeAttribute("data-skillsrc");
           includeHTML();
           
         }
