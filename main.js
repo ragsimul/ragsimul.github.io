@@ -41,7 +41,7 @@ function changeClass(mainchar) {
   for(var i=0; i< classImgNum.length; i++){
     if (mainchar === classImgNum[i]){
       className.innerHTML = classNameEN[i];
-      document.getElementById("classtree").dataset.skillsrc = classSkilltree[i];
+      
       if(fourthClasses.includes(className.innerHTML)){
         baseLV.value = maxLV_third;
         jobLV.value = '1';
@@ -78,6 +78,7 @@ function changeClass(mainchar) {
         statLVAdj();
         defaultstat();
       }
+      document.getElementById("classtree").dataset.skillsrc = classSkilltree[i];
       break;
     }else{
       className.innerHTML = "끄아앙";
