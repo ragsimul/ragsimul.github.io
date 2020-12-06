@@ -134,8 +134,8 @@ function includeHTML(callback) {
             elmnt.innerHTML = "아직 업데이트 되지 않았습니다!";
           }
           /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("data-skillsrc");
-          includeHTML();
+          /*elmnt.removeAttribute("data-skillsrc");*/
+          /*includeHTML();*/
         }
       };
       xhr.open("GET", file, true);
