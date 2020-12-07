@@ -43,6 +43,7 @@ function changeClass(mainchar) {
       className.innerHTML = classNameEN[i];
       document.getElementById("classtree").dataset.skillsrc = classSkilltree[i];
       includeHTML();
+      skillData();
       if(fourthClasses.includes(className.innerHTML)){
         baseLV.value = maxLV_third;
         jobLV.value = '1';
