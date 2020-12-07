@@ -1,7 +1,7 @@
 var swordmastery = 0, twohandedswordmastery = 0, bash = 0, magnumbreak= 0, increasehprecover = 0, provoke = 0, endure = 0;
 var firstskillpoints = 0;
 
-if(document.getElementById("className") == "Swordman"){
+
   document.getElementById("SwordMastery").addEventListener('click',function (e) {
     e.preventDefault();
     var num = Number(document.getElementById("SwordMasteryP").innerHTML);
@@ -255,6 +255,6 @@ if(document.getElementById("className") == "Swordman"){
       document.getElementById("firstsp").style.color = "black";
     }
   }
-}
+
 
 
