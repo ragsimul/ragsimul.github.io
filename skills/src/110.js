@@ -240,7 +240,7 @@ if(document.getElementById("className") == "Swordman"){
   var remainSP = 49;
   function firstSPcal(){
     firstskillpoints = remainSP - swordmastery - twohandedswordmastery - increasehprecover - bash - magnumbreak - provoke - endure;
-    document.getElementById("firstskillpoints").innerHTML = firstskillpoints
+    document.getElementById("firstsp").innerHTML = firstskillpoints;
     document.getElementById("SwordMasteryP").innerHTML = swordmastery;
     document.getElementById("TwoHandedSwordMasteryP").innerHTML = twohandedswordmastery;
     document.getElementById("IncreaseHPRecoverP").innerHTML = increasehprecover;
@@ -250,9 +250,9 @@ if(document.getElementById("className") == "Swordman"){
     document.getElementById("EndureP").innerHTML = endure;
 
     if(firstskillpoints < 0){
-      document.getElementById("firstskillpoints").style.color = "red";
+      document.getElementById("firstsp").style.color = "red";
     }else {
-      document.getElementById("firstskillpoints").style.color = "black";
+      document.getElementById("firstsp").style.color = "black";
     }
   }
 }
