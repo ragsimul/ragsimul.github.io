@@ -256,5 +256,5 @@ if(document.getElementById("className") == "Swordman"){
     }
   }
 }
-}
+
 
