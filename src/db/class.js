@@ -48,6 +48,6 @@ classSkilltree = ['./skills/000.html', './skills/001.html', './skills/002.html',
               './skills/510.html', './skills/521.html', './skills/522.html', './skills/523.html', './skills/524.html','./skills/531.html','./skills/532.html','./skills/541.html','./skills/542.html',
               './skills/610.html', './skills/621.html', './skills/622.html', './skills/623.html', './skills/624.html', './skills/625.html','./skills/626.html','./skills/631.html','./skills/632.html', './skills/633.html','./skills/641.html','./skills/642.html', './skills/643.html',
               './skills/710.html', './skills/721.html', './skills/722.html', './skills/731.html', './skills/732.html',
-              './skills/810.html', './skills/831.html', './skills/831.html',
+              './skills/810.html', './skills/831.html', './skills/832.html',
               './skills/910.html', './skills/931.html',
-              './skills/000.html'];
+              './skills/003.html'];
