@@ -555,6 +555,10 @@ ul:hover li{
   display: inline;
 }
 
+#firstsp{
+  display: inline;
+}
+
 #footer{
   position: fixed;
   bottom: 0;
