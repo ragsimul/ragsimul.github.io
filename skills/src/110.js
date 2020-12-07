@@ -1,6 +1,8 @@
 var swordmastery = 0, twohandedswordmastery = 0, bash = 0, magnumbreak= 0, increasehprecover = 0, provoke = 0, endure = 0;
 var firstskillpoints = 0;
 
+function skilldata(){
+  if(document.getElementById("className") == "Swordman"){
 
   document.getElementById("SwordMastery").addEventListener('click',function (e) {
     e.preventDefault();
@@ -256,5 +258,5 @@ var firstskillpoints = 0;
     }
   }
 
-
-
+  }
+}
