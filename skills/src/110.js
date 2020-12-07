@@ -2,6 +2,8 @@ var swordmastery = 0, twohandedswordmastery = 0, bash = 0, magnumbreak= 0, incre
 var firstskillpoints = 0;
 
 
+function skillcal(){
+  if(document.getElementById("className") == "Swordman"){
   document.getElementById("SwordMastery").addEventListener('click',function (e) {
     e.preventDefault();
     var num = Number(document.getElementById("SwordMasteryP").innerHTML);
@@ -240,7 +242,7 @@ var firstskillpoints = 0;
   var remainSP = 49;
   function firstSPcal(){
     firstskillpoints = remainSP - swordmastery - twohandedswordmastery - increasehprecover - bash - magnumbreak - provoke - endure;
-    document.getElementById("firstsp").innerHTML = firstskillpoints;
+    document.getElementById("firstskillpoints").innerHTML = firstskillpoints
     document.getElementById("SwordMasteryP").innerHTML = swordmastery;
     document.getElementById("TwoHandedSwordMasteryP").innerHTML = twohandedswordmastery;
     document.getElementById("IncreaseHPRecoverP").innerHTML = increasehprecover;
@@ -250,9 +252,11 @@ var firstskillpoints = 0;
     document.getElementById("EndureP").innerHTML = endure;
 
     if(firstskillpoints < 0){
-      document.getElementById("firstsp").style.color = "red";
+      document.getElementById("firstskillpoints").style.color = "red";
     }else {
-      document.getElementById("firstsp").style.color = "black";
+      document.getElementById("firstskillpoints").style.color = "black";
     }
   }
-
+}
+}
+}
