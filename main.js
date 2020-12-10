@@ -42,7 +42,7 @@ function changeClass(mainchar) {
     if (mainchar === classImgNum[i]){
       className.innerHTML = classNameEN[i];
       document.getElementById("classtree").dataset.skillsrc = classSkilltree[i];
-      includeHTML();
+      includeHTML(skillCal);
       if(fourthClasses.includes(className.innerHTML)){
         baseLV.value = maxLV_third;
         jobLV.value = '1';
@@ -136,7 +136,7 @@ function includeHTML(callback) {
           }
           /*remove the attribute, and call this function once more:*/
           elmnt.removeAttribute("data-skillsrc");
-          includeHTML();
+          includeHTML(skillCal);
           
         }
       };
