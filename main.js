@@ -145,5 +145,7 @@ function includeHTML(callback) {
       /*exit the function:*/
       return;
     }
-  }
+  }setTimeout(function() {
+    skillCal();
+  }, 0);
 }
