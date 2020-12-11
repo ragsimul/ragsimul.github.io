@@ -44,6 +44,14 @@ function swordman(){
       document.getElementById("SwordMasteryP").innerHTML = swordmastery;
       firstSPcal();
     });
+        
+    document.getElementById("SwordMasteryBox").addEventListener('mouseover', function(e){
+      document.getElementById("SwordMasteryBox").style.backgroundColor = "rgba(124, 156, 225, 0.4)";
+      document.getElementById("SwordMasteryBox").style.borderRadius = "10px";
+    });
+    document.getElementById("SwordMasteryBox").addEventListener('mouseout', function(e){
+      document.getElementById("SwordMasteryBox").style.backgroundColor = "rgba(255, 255, 255, 0)";
+    });
 
     document.getElementById("TwoHandedSwordMastery").addEventListener('click',function (e) {
       e.preventDefault();
@@ -81,6 +89,8 @@ function swordman(){
       firstSPcal();
     });
 
+
+        
     document.getElementById("TwoHandedSwordMasteryBox").addEventListener('mouseover', function(e){
       document.getElementById("SwordMasteryBox").style.backgroundColor = "rgba(255, 121, 158, 0.3)";
       document.getElementById("SwordMasteryBox").style.borderRadius = "10px";
@@ -94,6 +104,9 @@ function swordman(){
       document.getElementById("SwordMasteryP").style.color = "black";
     });
 
+        
+
+        
     document.getElementById("IncreaseHPRecover").addEventListener('click',function (e) {
       e.preventDefault();
       var num = Number(document.getElementById("IncreaseHPRecoverP").innerHTML);
@@ -124,6 +137,15 @@ function swordman(){
       firstSPcal();
     });
 
+    document.getElementById("IncreaseHPRecoverBox").addEventListener('mouseover', function(e){
+      document.getElementById("IncreaseHPRecoverBox").style.backgroundColor = "rgba(124, 156, 225, 0.4)";
+      document.getElementById("IncreaseHPRecoverBox").style.borderRadius = "10px";
+    });
+    document.getElementById("IncreaseHPRecoverBox").addEventListener('mouseout', function(e){
+      document.getElementById("IncreaseHPRecoverBox").style.backgroundColor = "rgba(255, 255, 255, 0)";
+    });        
+        
+        
     document.getElementById("Bash").addEventListener('click',function (e) {
       e.preventDefault();
       var num = Number(document.getElementById("BashP").innerHTML);
@@ -164,7 +186,14 @@ function swordman(){
       document.getElementById("BashP").innerHTML = bash;
       firstSPcal();
     });
-
+    document.getElementById("BashBox").addEventListener('mouseover', function(e){
+      document.getElementById("BashBox").style.backgroundColor = "rgba(124, 156, 225, 0.4)";
+      document.getElementById("BashBox").style.borderRadius = "10px";
+    });
+    document.getElementById("BashBox").addEventListener('mouseout', function(e){
+      document.getElementById("BashBox").style.backgroundColor = "rgba(255, 255, 255, 0)";
+    });
+        
     document.getElementById("MagnumBreak").addEventListener('click',function (e) {
       e.preventDefault();
       if (bash < 5){
@@ -255,6 +284,14 @@ function swordman(){
       firstSPcal();
     });
 
+     document.getElementById("ProvokeBox").addEventListener('mouseover', function(e){
+      document.getElementById("ProvokeBox").style.backgroundColor = "rgba(124, 156, 225, 0.4)";
+      document.getElementById("ProvokeBox").style.borderRadius = "10px";
+    });
+    document.getElementById("ProvokeBox").addEventListener('mouseout', function(e){
+      document.getElementById("ProvokeBox").style.backgroundColor = "rgba(255, 255, 255, 0)";
+    });       
+        
     document.getElementById("Endure").addEventListener('click',function (e) {
       e.preventDefault();
       if (provoke < 5){
