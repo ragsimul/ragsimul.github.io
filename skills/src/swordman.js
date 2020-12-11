@@ -1,6 +1,6 @@
 /* Swordman Class */
 function swordman(){
-
+    if(document.getElementById("className").innerHTML == 'Swordman'){
     var swordmastery = 0, twohandedswordmastery = 0, bash = 0, magnumbreak= 0, increasehprecover = 0, provoke = 0, endure = 0;
     var firstskillpoints = 0;
     document.getElementById("SwordMastery").addEventListener('click',function (e) {
@@ -315,5 +315,5 @@ function swordman(){
         document.getElementById("firstsp").style.color = "black";
       }
     }
-
+  }
 }
