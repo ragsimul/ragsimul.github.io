@@ -337,7 +337,7 @@ function swordman(){
     });
 
     document.getElementById("EndureBox").addEventListener('mouseover', function(e){
-      document.getElementById("EndureBox").style.backgroundColor = "rgba(124, 156, 225, 0.4))";
+      document.getElementById("EndureBox").style.backgroundColor = "rgba(124, 156, 225, 0.4)";
       document.getElementById("EndureBox").style.borderRadius = "10px";
       document.getElementById("ProvokeBox").style.backgroundColor = "rgba(255, 121, 158, 0.3)";
       document.getElementById("ProvokeBox").style.borderRadius = "10px";
