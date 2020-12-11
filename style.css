@@ -523,11 +523,6 @@ ul:hover li{
   height: 10%;
 }
 
-.skillinfo:hover{
-  background-color:  rgba(124, 156, 225, 0.4);
-  border-radius: 10px;
-}
-
 .skillname{
   text-align: center;
   height: 12px;
