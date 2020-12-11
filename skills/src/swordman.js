@@ -303,7 +303,7 @@ function swordman(){
       document.getElementById("ProvokeP").innerHTML = provoke;
       document.getElementById("ProvokeP").style.color = "black";
     });
-
+ 
     var remainSP = 49;
     function firstSPcal(){
       firstskillpoints = remainSP - swordmastery - twohandedswordmastery - increasehprecover - bash - magnumbreak - provoke - endure;
