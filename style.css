@@ -546,6 +546,11 @@ ul:hover li{
   margin: auto;
 }
 
+.skillinfo:hover{
+  background-color:  rgba(200, 200, 200, 0.4);
+  border-radius: 10px;
+}
+
 #skillpoints{
   display: inline;
 }
