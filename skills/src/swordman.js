@@ -92,6 +92,8 @@ function swordman(){
 
         
     document.getElementById("TwoHandedSwordMasteryBox").addEventListener('mouseover', function(e){
+      document.getElementById("TwoHandedSwordMasteryBox").style.backgroundColor = "rgba(124, 156, 225, 0.4)";
+      document.getElementById("TwoHandedSwordMasteryBox").style.borderRadius = "10px";
       document.getElementById("SwordMasteryBox").style.backgroundColor = "rgba(255, 121, 158, 0.3)";
       document.getElementById("SwordMasteryBox").style.borderRadius = "10px";
       document.getElementById("SwordMasteryP").innerHTML = "1";
@@ -99,6 +101,8 @@ function swordman(){
 
     });
     document.getElementById("TwoHandedSwordMasteryBox").addEventListener('mouseout', function(e){
+      document.getElementById("TwoHandedSwordMasteryBox").style.backgroundColor = "rgba(255, 255, 255, 0)";
+      document.getElementById("TwoHandedSwordMasteryBox").style.borderRadius = "10px";
       document.getElementById("SwordMasteryBox").style.backgroundColor = "rgba(255, 255, 255, 0)";
       document.getElementById("SwordMasteryP").innerHTML = swordmastery;
       document.getElementById("SwordMasteryP").style.color = "black";
@@ -231,6 +235,8 @@ function swordman(){
     });
 
     document.getElementById("MagnumBreakBox").addEventListener('mouseover', function(e){
+      document.getElementById("MagnumBreakBox").style.backgroundColor = "rgba(124, 156, 225, 0.4)";
+      document.getElementById("MagnumBreakBox").style.borderRadius = "10px";
       document.getElementById("BashBox").style.backgroundColor = "rgba(255, 121, 158, 0.3)";
       document.getElementById("BashBox").style.borderRadius = "10px";
       document.getElementById("BashP").innerHTML = "5";
@@ -238,6 +244,8 @@ function swordman(){
 
     });
     document.getElementById("MagnumBreakBox").addEventListener('mouseout', function(e){
+      document.getElementById("MagnumBreakBox").style.backgroundColor = "rgba(255, 255, 255, 0)";
+      document.getElementById("MagnumBreakBox").style.borderRadius = "10px";
       document.getElementById("BashBox").style.backgroundColor = "rgba(255, 255, 255, 0)";
       document.getElementById("BashP").innerHTML = bash;
       document.getElementById("BashP").style.color = "black";
@@ -329,6 +337,8 @@ function swordman(){
     });
 
     document.getElementById("EndureBox").addEventListener('mouseover', function(e){
+      document.getElementById("EndureBox").style.backgroundColor = "rgba(124, 156, 225, 0.4))";
+      document.getElementById("EndureBox").style.borderRadius = "10px";
       document.getElementById("ProvokeBox").style.backgroundColor = "rgba(255, 121, 158, 0.3)";
       document.getElementById("ProvokeBox").style.borderRadius = "10px";
       document.getElementById("ProvokeP").innerHTML = "5";
@@ -336,6 +346,8 @@ function swordman(){
 
     });
     document.getElementById("EndureBox").addEventListener('mouseout', function(e){
+      document.getElementById("EndureBox").style.backgroundColor = "rgba(255, 255, 255, 0)";
+      document.getElementById("EndureBox").style.borderRadius = "10px";
       document.getElementById("ProvokeBox").style.backgroundColor = "rgba(255, 255, 255, 0)";
       document.getElementById("ProvokeP").innerHTML = provoke;
       document.getElementById("ProvokeP").style.color = "black";
