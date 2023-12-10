@@ -15,10 +15,10 @@ function updateResult() {
     var etel_stone = etel_price * 5 + 100000;
     etel_stone_price.innerText = (etel_stone).toLocaleString();
 
-    etel_aqua.innerText = ((etel_stone * 5)*3 + 100000*5).toLocaleString();
-    etel_topaz.innerText = ((etel_stone * 5)*6 + 200000*5).toLocaleString();
-    etel_amethyst.innerText = ((etel_stone * 5)*10 + 300000*5).toLocaleString();
-    etel_amber.innerText = ((etel_stone * 5)*15 + 500000*5).toLocaleString();
+    etel_aqua.innerText = ((etel_stone * 5)*3 + 100000*5 + 500000).toLocaleString();
+    etel_topaz.innerText = ((etel_stone * 5)*6 + 200000*5 + 625000).toLocaleString();
+    etel_amethyst.innerText = ((etel_stone * 5)*10 + 300000*5 + 1000000).toLocaleString();
+    etel_amber.innerText = ((etel_stone * 5)*15 + 500000*5 + 2500000).toLocaleString();
     
 
 }
