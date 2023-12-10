@@ -2,6 +2,7 @@ body{
 }
 table{
     text-align: center;
+    border-collapse : collapse
 }
 table tr th{
     border-spacing: 0px;
