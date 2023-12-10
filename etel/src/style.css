@@ -1,5 +1,12 @@
 body{
 }
-#etel_table tr{
+table{
     text-align: center;
+}
+table tr th{
+    border-bottom: 1px solid black;
+}
+
+table tr th{
+    border-bottom: 1px solid #aaa;
 }
