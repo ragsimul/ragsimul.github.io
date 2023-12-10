@@ -1,6 +1,7 @@
 body{
     font-size: 10px;
 }
-#etel_table{
+#etel_table tr td{
     border: 1px solid #aaa;
+    text-align: center;
 }
