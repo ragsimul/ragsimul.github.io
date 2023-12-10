@@ -4,9 +4,11 @@ table{
     text-align: center;
 }
 table tr th{
+    border-spacing: 0px;
     border-bottom: 1px solid black;
 }
 
-table tr th{
+table tr td{
+    border-spacing: 0px;
     border-bottom: 1px solid #aaa;
 }
